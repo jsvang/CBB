@@ -1,0 +1,8 @@
+/js/*
+  Cache-Control: public, max-age=600
+
+/data/players/manifest.json
+  Cache-Control: public, max-age=300
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

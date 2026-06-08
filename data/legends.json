@@ -1,0 +1,4077 @@
+[
+  {
+    "name": "Wendell Hudson",
+    "team": "alabama",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 19.2,
+      "rpg": 9.7,
+      "apg": 1.9,
+      "spg": 1.0,
+      "bpg": 0.8,
+      "fgPct": 48.3
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Brandon Miller",
+    "team": "alabama",
+    "era": "2020-24",
+    "positions": [
+      "SF"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 18.8,
+      "rpg": 8.2,
+      "apg": 2.1,
+      "spg": 0.9,
+      "bpg": 0.9,
+      "fgPct": 43.0
+    },
+    "awards": "SEC Player of the Year"
+  },
+  {
+    "name": "Sidney Moncrief",
+    "team": "arkansas",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 16.9,
+      "rpg": 8.6,
+      "apg": 4.5,
+      "spg": 2.2,
+      "bpg": 0.5,
+      "fgPct": 52.5
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Corliss Williamson",
+    "team": "arkansas",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 19.4,
+      "rpg": 8.9,
+      "apg": 1.7,
+      "spg": 0.9,
+      "bpg": 0.8,
+      "fgPct": 53.7
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Charles Barkley",
+    "team": "auburn",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 14.1,
+      "rpg": 9.6,
+      "apg": 1.6,
+      "spg": 1.7,
+      "bpg": 1.2,
+      "fgPct": 62.6
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Chuck Person",
+    "team": "auburn",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 19.0,
+      "rpg": 8.9,
+      "apg": 1.4,
+      "spg": 1.1,
+      "bpg": 0.6,
+      "fgPct": 50.1
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Joakim Noah",
+    "team": "florida",
+    "era": "2005-09",
+    "positions": [
+      "C"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 12.4,
+      "rpg": 8.4,
+      "apg": 2.3,
+      "spg": 1.1,
+      "bpg": 1.9,
+      "fgPct": 61.4
+    },
+    "awards": "2x NCAA Champion"
+  },
+  {
+    "name": "Bradley Beal",
+    "team": "florida",
+    "era": "2010-14",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 14.8,
+      "rpg": 6.7,
+      "apg": 2.2,
+      "spg": 1.4,
+      "bpg": 0.8,
+      "fgPct": 44.5
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Dominique Wilkins",
+    "team": "georgia",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 21.6,
+      "rpg": 7.9,
+      "apg": 1.6,
+      "spg": 1.4,
+      "bpg": 0.9,
+      "fgPct": 54.7
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Yante Maten",
+    "team": "georgia",
+    "era": "2015-19",
+    "positions": [
+      "PF"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 19.3,
+      "rpg": 8.6,
+      "apg": 1.5,
+      "spg": 1.1,
+      "bpg": 1.5,
+      "fgPct": 52.6
+    },
+    "awards": "SEC Player of the Year"
+  },
+  {
+    "name": "Anthony Davis",
+    "team": "kentucky",
+    "era": "2010-14",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 14.2,
+      "rpg": 10.4,
+      "apg": 1.3,
+      "spg": 1.4,
+      "bpg": 4.7,
+      "fgPct": 62.3
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Dan Issel",
+    "team": "kentucky",
+    "era": "1960s",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 25.7,
+      "rpg": 13.2,
+      "apg": 1.8,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 51.7
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Pete Maravich",
+    "team": "lsu",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 44.2,
+      "rpg": 5.4,
+      "apg": 4.7,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 44.0
+    },
+    "awards": "NCAA All-Time Scoring Leader"
+  },
+  {
+    "name": "Shaquille O'Neal",
+    "team": "lsu",
+    "era": "1990s",
+    "positions": [
+      "C"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 21.6,
+      "rpg": 13.5,
+      "apg": 1.6,
+      "spg": 0.7,
+      "bpg": 4.6,
+      "fgPct": 62.8
+    },
+    "awards": "2x SEC Player of the Year"
+  },
+  {
+    "name": "Johnny Neumann",
+    "team": "ole-miss",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 40.1,
+      "rpg": 11.2,
+      "apg": 2.7,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 47.0
+    },
+    "awards": "SEC Player of the Year"
+  },
+  {
+    "name": "Marshall Henderson",
+    "team": "ole-miss",
+    "era": "2010-14",
+    "positions": [
+      "SG"
+    ],
+    "rating": 78,
+    "stats": {
+      "ppg": 19.0,
+      "rpg": 3.1,
+      "apg": 1.6,
+      "spg": 1.2,
+      "bpg": 0.1,
+      "fgPct": 40.0
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Bailey Howell",
+    "team": "mississippi-state",
+    "era": "1960s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 27.1,
+      "rpg": 17.0,
+      "apg": 2.0,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 52.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Erick Dampier",
+    "team": "mississippi-state",
+    "era": "1990s",
+    "positions": [
+      "C"
+    ],
+    "rating": 83,
+    "stats": {
+      "ppg": 12.2,
+      "rpg": 7.5,
+      "apg": 0.5,
+      "spg": 0.7,
+      "bpg": 1.8,
+      "fgPct": 53.0
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Kareem Rush",
+    "team": "missouri",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 19.9,
+      "rpg": 5.1,
+      "apg": 2.0,
+      "spg": 1.4,
+      "bpg": 0.3,
+      "fgPct": 45.7
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Michael Porter Jr.",
+    "team": "missouri",
+    "era": "2015-19",
+    "positions": [
+      "SF"
+    ],
+    "rating": 79,
+    "stats": {
+      "ppg": 10.0,
+      "rpg": 6.7,
+      "apg": 0.3,
+      "spg": 1.0,
+      "bpg": 1.0,
+      "fgPct": 47.4
+    },
+    "awards": "McDonald's All-American"
+  },
+  {
+    "name": "Alex English",
+    "team": "south-carolina",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 17.4,
+      "rpg": 8.3,
+      "apg": 1.6,
+      "spg": 0.7,
+      "bpg": 0.4,
+      "fgPct": 52.0
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Devan Downey",
+    "team": "south-carolina",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 17.5,
+      "rpg": 3.0,
+      "apg": 3.2,
+      "spg": 2.4,
+      "bpg": 0.1,
+      "fgPct": 40.7
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Bernard King",
+    "team": "tennessee",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 25.8,
+      "rpg": 13.2,
+      "apg": 1.4,
+      "spg": 1.2,
+      "bpg": 0.8,
+      "fgPct": 57.8
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Allan Houston",
+    "team": "tennessee",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 18.1,
+      "rpg": 4.4,
+      "apg": 2.7,
+      "spg": 1.5,
+      "bpg": 0.2,
+      "fgPct": 43.8
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Khris Middleton",
+    "team": "texas-am",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 13.2,
+      "rpg": 5.0,
+      "apg": 2.2,
+      "spg": 1.0,
+      "bpg": 0.5,
+      "fgPct": 45.3
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Acie Law",
+    "team": "texas-am",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 15.2,
+      "rpg": 3.4,
+      "apg": 4.5,
+      "spg": 1.2,
+      "bpg": 0.2,
+      "fgPct": 44.9
+    },
+    "awards": "Big 12 Player of the Year"
+  },
+  {
+    "name": "Shan Foster",
+    "team": "vanderbilt",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 20.3,
+      "rpg": 4.3,
+      "apg": 2.2,
+      "spg": 1.4,
+      "bpg": 0.4,
+      "fgPct": 44.5
+    },
+    "awards": "SEC Player of the Year"
+  },
+  {
+    "name": "Will Perdue",
+    "team": "vanderbilt",
+    "era": "1980s",
+    "positions": [
+      "C"
+    ],
+    "rating": 79,
+    "stats": {
+      "ppg": 14.4,
+      "rpg": 8.1,
+      "apg": 1.1,
+      "spg": 0.5,
+      "bpg": 1.4,
+      "fgPct": 55.0
+    },
+    "awards": "All-SEC"
+  },
+  {
+    "name": "Kevin Durant",
+    "team": "texas",
+    "era": "2005-09",
+    "positions": [
+      "SF"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 25.8,
+      "rpg": 11.1,
+      "apg": 1.3,
+      "spg": 1.9,
+      "bpg": 1.9,
+      "fgPct": 47.3
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "T.J. Ford",
+    "team": "texas",
+    "era": "2000-04",
+    "positions": [
+      "PG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 14.8,
+      "rpg": 4.4,
+      "apg": 7.7,
+      "spg": 1.9,
+      "bpg": 0.1,
+      "fgPct": 43.5
+    },
+    "awards": "Naismith Player of the Year"
+  },
+  {
+    "name": "Trae Young",
+    "team": "oklahoma",
+    "era": "2015-19",
+    "positions": [
+      "PG"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 27.4,
+      "rpg": 3.9,
+      "apg": 8.7,
+      "spg": 1.7,
+      "bpg": 0.3,
+      "fgPct": 42.2
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "Blake Griffin",
+    "team": "oklahoma",
+    "era": "2005-09",
+    "positions": [
+      "PF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 22.7,
+      "rpg": 14.4,
+      "apg": 2.3,
+      "spg": 1.1,
+      "bpg": 1.0,
+      "fgPct": 65.4
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Dee Brown",
+    "team": "illinois",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 13.8,
+      "rpg": 2.8,
+      "apg": 4.6,
+      "spg": 1.7,
+      "bpg": 0.1,
+      "fgPct": 41.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Ayo Dosunmu",
+    "team": "illinois",
+    "era": "2020-24",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 16.7,
+      "rpg": 4.8,
+      "apg": 3.9,
+      "spg": 1.0,
+      "bpg": 0.3,
+      "fgPct": 48.1
+    },
+    "awards": "Big Ten Player of the Year"
+  },
+  {
+    "name": "Isiah Thomas",
+    "team": "indiana",
+    "era": "1980s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 15.4,
+      "rpg": 3.5,
+      "apg": 5.1,
+      "spg": 2.0,
+      "bpg": 0.3,
+      "fgPct": 49.0
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Calbert Cheaney",
+    "team": "indiana",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 19.8,
+      "rpg": 6.0,
+      "apg": 2.3,
+      "spg": 1.8,
+      "bpg": 0.5,
+      "fgPct": 53.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Luka Garza",
+    "team": "iowa",
+    "era": "2020-24",
+    "positions": [
+      "C"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 23.7,
+      "rpg": 8.8,
+      "apg": 1.2,
+      "spg": 0.8,
+      "bpg": 1.6,
+      "fgPct": 55.4
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Roy Marble",
+    "team": "iowa",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 14.5,
+      "rpg": 3.7,
+      "apg": 1.5,
+      "spg": 1.4,
+      "bpg": 0.3,
+      "fgPct": 48.0
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Len Bias",
+    "team": "maryland",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 23.2,
+      "rpg": 7.0,
+      "apg": 1.4,
+      "spg": 1.0,
+      "bpg": 1.0,
+      "fgPct": 54.4
+    },
+    "awards": "2x ACC Player of the Year"
+  },
+  {
+    "name": "Juan Dixon",
+    "team": "maryland",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 18.4,
+      "rpg": 3.7,
+      "apg": 2.6,
+      "spg": 1.9,
+      "bpg": 0.2,
+      "fgPct": 43.2
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Cazzie Russell",
+    "team": "michigan",
+    "era": "1960s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 27.1,
+      "rpg": 7.0,
+      "apg": 2.2,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 48.8
+    },
+    "awards": "2x Big Ten Player of the Year"
+  },
+  {
+    "name": "Chris Webber",
+    "team": "michigan",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 17.4,
+      "rpg": 10.0,
+      "apg": 3.0,
+      "spg": 1.3,
+      "bpg": 1.6,
+      "fgPct": 56.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Magic Johnson",
+    "team": "michigan-state",
+    "era": "1970s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 17.1,
+      "rpg": 7.6,
+      "apg": 7.9,
+      "spg": 2.3,
+      "bpg": 0.8,
+      "fgPct": 53.2
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Draymond Green",
+    "team": "michigan-state",
+    "era": "2010-14",
+    "positions": [
+      "F"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 12.6,
+      "rpg": 8.6,
+      "apg": 3.8,
+      "spg": 1.3,
+      "bpg": 1.0,
+      "fgPct": 44.8
+    },
+    "awards": "Big Ten Player of the Year"
+  },
+  {
+    "name": "Mychal Thompson",
+    "team": "minnesota",
+    "era": "1970s",
+    "positions": [
+      "C"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 21.3,
+      "rpg": 12.7,
+      "apg": 2.7,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 54.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Kris Humphries",
+    "team": "minnesota",
+    "era": "2000-04",
+    "positions": [
+      "PF"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 21.7,
+      "rpg": 10.1,
+      "apg": 1.3,
+      "spg": 1.0,
+      "bpg": 1.9,
+      "fgPct": 44.4
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Tyronn Lue",
+    "team": "nebraska",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 21.1,
+      "rpg": 3.1,
+      "apg": 4.7,
+      "spg": 1.9,
+      "bpg": 0.1,
+      "fgPct": 47.2
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "James Palmer Jr.",
+    "team": "nebraska",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 78,
+    "stats": {
+      "ppg": 17.2,
+      "rpg": 4.0,
+      "apg": 3.0,
+      "spg": 1.2,
+      "bpg": 0.2,
+      "fgPct": 44.5
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Evan Eschmeyer",
+    "team": "northwestern",
+    "era": "1990s",
+    "positions": [
+      "C"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 15.0,
+      "rpg": 8.5,
+      "apg": 1.1,
+      "spg": 0.5,
+      "bpg": 2.0,
+      "fgPct": 53.5
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "John Shurna",
+    "team": "northwestern",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 18.3,
+      "rpg": 5.5,
+      "apg": 2.8,
+      "spg": 0.8,
+      "bpg": 0.5,
+      "fgPct": 43.5
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Jerry Lucas",
+    "team": "ohio-state",
+    "era": "1960s",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 24.3,
+      "rpg": 17.2,
+      "apg": 2.4,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 62.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Evan Turner",
+    "team": "ohio-state",
+    "era": "2010-14",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 20.4,
+      "rpg": 9.2,
+      "apg": 6.0,
+      "spg": 1.7,
+      "bpg": 0.5,
+      "fgPct": 51.9
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Jesse Arnelle",
+    "team": "penn-state",
+    "era": "1960s",
+    "positions": [
+      "C"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 9.8,
+      "apg": 1.5,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 48.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Talor Battle",
+    "team": "penn-state",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 79,
+    "stats": {
+      "ppg": 15.7,
+      "rpg": 3.4,
+      "apg": 3.2,
+      "spg": 1.2,
+      "bpg": 0.1,
+      "fgPct": 39.8
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Rick Mount",
+    "team": "purdue",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 32.3,
+      "rpg": 6.7,
+      "apg": 2.9,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 52.8
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Glenn Robinson",
+    "team": "purdue",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 30.3,
+      "rpg": 10.1,
+      "apg": 2.5,
+      "spg": 1.1,
+      "bpg": 1.0,
+      "fgPct": 49.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Roy Hinson",
+    "team": "rutgers",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 83,
+    "stats": {
+      "ppg": 19.8,
+      "rpg": 8.5,
+      "apg": 1.8,
+      "spg": 1.2,
+      "bpg": 1.3,
+      "fgPct": 53.2
+    },
+    "awards": "All-Big East"
+  },
+  {
+    "name": "Geo Baker",
+    "team": "rutgers",
+    "era": "2020-24",
+    "positions": [
+      "SG"
+    ],
+    "rating": 76,
+    "stats": {
+      "ppg": 12.9,
+      "rpg": 3.8,
+      "apg": 2.9,
+      "spg": 0.9,
+      "bpg": 0.2,
+      "fgPct": 38.4
+    },
+    "awards": "All-Big Ten"
+  },
+  {
+    "name": "Frank Kaminsky",
+    "team": "wisconsin",
+    "era": "2015-19",
+    "positions": [
+      "C"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 18.8,
+      "rpg": 8.2,
+      "apg": 2.6,
+      "spg": 1.2,
+      "bpg": 1.5,
+      "fgPct": 54.7
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Alando Tucker",
+    "team": "wisconsin",
+    "era": "2005-09",
+    "positions": [
+      "SF"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 19.9,
+      "rpg": 5.5,
+      "apg": 1.9,
+      "spg": 1.0,
+      "bpg": 0.5,
+      "fgPct": 47.3
+    },
+    "awards": "Big Ten Player of the Year"
+  },
+  {
+    "name": "Kareem Abdul-Jabbar",
+    "team": "ucla",
+    "era": "1960s",
+    "positions": [
+      "C"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 26.4,
+      "rpg": 15.5,
+      "apg": 1.2,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 63.9
+    },
+    "awards": "3x NCAA Champion"
+  },
+  {
+    "name": "Bill Walton",
+    "team": "ucla",
+    "era": "1970s",
+    "positions": [
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 20.3,
+      "rpg": 15.7,
+      "apg": 5.5,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 65.1
+    },
+    "awards": "2x National Player of the Year"
+  },
+  {
+    "name": "Paul Westphal",
+    "team": "usc",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 83,
+    "stats": {
+      "ppg": 16.2,
+      "rpg": 4.7,
+      "apg": 3.2,
+      "spg": 1.0,
+      "bpg": 0.2,
+      "fgPct": 47.1
+    },
+    "awards": "All-Pac-8"
+  },
+  {
+    "name": "O.J. Mayo",
+    "team": "usc",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 20.7,
+      "rpg": 4.5,
+      "apg": 3.3,
+      "spg": 1.6,
+      "bpg": 0.3,
+      "fgPct": 46.2
+    },
+    "awards": "Pac-10 Freshman of the Year"
+  },
+  {
+    "name": "Luke Ridnour",
+    "team": "oregon",
+    "era": "2000-04",
+    "positions": [
+      "PG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 19.7,
+      "rpg": 4.0,
+      "apg": 6.6,
+      "spg": 2.0,
+      "bpg": 0.2,
+      "fgPct": 45.2
+    },
+    "awards": "Pac-10 Player of the Year"
+  },
+  {
+    "name": "Payton Pritchard",
+    "team": "oregon",
+    "era": "2020-24",
+    "positions": [
+      "PG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 13.5,
+      "rpg": 3.8,
+      "apg": 4.6,
+      "spg": 1.1,
+      "bpg": 0.1,
+      "fgPct": 44.3
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "Brandon Roy",
+    "team": "washington",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 20.2,
+      "rpg": 5.6,
+      "apg": 4.1,
+      "spg": 1.2,
+      "bpg": 0.7,
+      "fgPct": 50.8
+    },
+    "awards": "Pac-10 Player of the Year"
+  },
+  {
+    "name": "Isaiah Thomas",
+    "team": "washington",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 3.0,
+      "apg": 3.7,
+      "spg": 1.0,
+      "bpg": 0.1,
+      "fgPct": 45.1
+    },
+    "awards": "All-Pac-10"
+  },
+  {
+    "name": "Sean Elliott",
+    "team": "arizona",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 19.2,
+      "rpg": 6.1,
+      "apg": 2.7,
+      "spg": 1.1,
+      "bpg": 0.6,
+      "fgPct": 51.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Mike Bibby",
+    "team": "arizona",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 17.2,
+      "rpg": 3.5,
+      "apg": 5.0,
+      "spg": 1.7,
+      "bpg": 0.1,
+      "fgPct": 50.2
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "James Harden",
+    "team": "arizona-state",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 20.1,
+      "rpg": 5.6,
+      "apg": 4.2,
+      "spg": 1.7,
+      "bpg": 0.6,
+      "fgPct": 50.6
+    },
+    "awards": "Pac-10 Player of the Year"
+  },
+  {
+    "name": "Eddie House",
+    "team": "arizona-state",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 23.0,
+      "rpg": 5.3,
+      "apg": 2.7,
+      "spg": 1.5,
+      "bpg": 0.4,
+      "fgPct": 43.8
+    },
+    "awards": "All-Pac-10"
+  },
+  {
+    "name": "Vinnie Johnson",
+    "team": "baylor",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 24.1,
+      "rpg": 7.4,
+      "apg": 2.9,
+      "spg": 1.1,
+      "bpg": 0.3,
+      "fgPct": 49.7
+    },
+    "awards": "All-SWC"
+  },
+  {
+    "name": "Ekpe Udoh",
+    "team": "baylor",
+    "era": "2010-14",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 13.9,
+      "rpg": 9.8,
+      "apg": 2.7,
+      "spg": 0.9,
+      "bpg": 3.7,
+      "fgPct": 56.7
+    },
+    "awards": "Big 12 Defensive Player of the Year"
+  },
+  {
+    "name": "Danny Ainge",
+    "team": "byu",
+    "era": "1980s",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 24.4,
+      "rpg": 7.6,
+      "apg": 4.8,
+      "spg": 2.3,
+      "bpg": 0.3,
+      "fgPct": 51.1
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Jimmer Fredette",
+    "team": "byu",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 28.9,
+      "rpg": 3.4,
+      "apg": 4.3,
+      "spg": 1.3,
+      "bpg": 0.0,
+      "fgPct": 45.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Oscar Robertson",
+    "team": "cincinnati",
+    "era": "1960s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 33.8,
+      "rpg": 15.2,
+      "apg": 7.1,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 51.8
+    },
+    "awards": "3x National Player of the Year"
+  },
+  {
+    "name": "Kenyon Martin",
+    "team": "cincinnati",
+    "era": "2000-04",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 18.9,
+      "rpg": 9.7,
+      "apg": 1.5,
+      "spg": 1.8,
+      "bpg": 3.5,
+      "fgPct": 56.8
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Chauncey Billups",
+    "team": "colorado",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 18.5,
+      "rpg": 5.1,
+      "apg": 5.0,
+      "spg": 1.4,
+      "bpg": 0.5,
+      "fgPct": 46.9
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Andre Roberson",
+    "team": "colorado",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 79,
+    "stats": {
+      "ppg": 10.9,
+      "rpg": 11.2,
+      "apg": 1.2,
+      "spg": 1.3,
+      "bpg": 1.4,
+      "fgPct": 48.9
+    },
+    "awards": "Pac-12 Defensive Player of the Year"
+  },
+  {
+    "name": "Hakeem Olajuwon",
+    "team": "houston",
+    "era": "1980s",
+    "positions": [
+      "C"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 16.8,
+      "rpg": 13.5,
+      "apg": 1.2,
+      "spg": 1.1,
+      "bpg": 5.6,
+      "fgPct": 63.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Clyde Drexler",
+    "team": "houston",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 14.4,
+      "rpg": 8.8,
+      "apg": 3.4,
+      "spg": 2.0,
+      "bpg": 0.6,
+      "fgPct": 54.4
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Jeff Hornacek",
+    "team": "iowa-state",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 16.5,
+      "rpg": 4.0,
+      "apg": 2.8,
+      "spg": 1.4,
+      "bpg": 0.2,
+      "fgPct": 52.0
+    },
+    "awards": "All-Big Eight"
+  },
+  {
+    "name": "Georges Niang",
+    "team": "iowa-state",
+    "era": "2015-19",
+    "positions": [
+      "PF"
+    ],
+    "rating": 83,
+    "stats": {
+      "ppg": 20.5,
+      "rpg": 6.2,
+      "apg": 3.3,
+      "spg": 0.9,
+      "bpg": 0.6,
+      "fgPct": 54.5
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Wilt Chamberlain",
+    "team": "kansas",
+    "era": "1960s",
+    "positions": [
+      "C"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 29.9,
+      "rpg": 18.3,
+      "apg": 2.0,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 54.7
+    },
+    "awards": "2x All-American"
+  },
+  {
+    "name": "Danny Manning",
+    "team": "kansas",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 20.1,
+      "rpg": 8.1,
+      "apg": 2.1,
+      "spg": 1.1,
+      "bpg": 0.8,
+      "fgPct": 55.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Mitch Richmond",
+    "team": "kansas-state",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 20.7,
+      "rpg": 6.0,
+      "apg": 3.3,
+      "spg": 1.2,
+      "bpg": 0.3,
+      "fgPct": 52.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Michael Beasley",
+    "team": "kansas-state",
+    "era": "2005-09",
+    "positions": [
+      "PF"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 26.2,
+      "rpg": 12.4,
+      "apg": 1.2,
+      "spg": 1.3,
+      "bpg": 1.7,
+      "fgPct": 53.2
+    },
+    "awards": "Big 12 Player of the Year"
+  },
+  {
+    "name": "Marcus Smart",
+    "team": "oklahoma-state",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 15.4,
+      "rpg": 5.8,
+      "apg": 4.2,
+      "spg": 2.9,
+      "bpg": 0.6,
+      "fgPct": 42.2
+    },
+    "awards": "Big 12 Player of the Year"
+  },
+  {
+    "name": "John Starks",
+    "team": "oklahoma-state",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 79,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 4.2,
+      "apg": 2.9,
+      "spg": 1.4,
+      "bpg": 0.2,
+      "fgPct": 44.0
+    },
+    "awards": "All-Big Eight"
+  },
+  {
+    "name": "Kurt Thomas",
+    "team": "tcu",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 16.9,
+      "rpg": 9.6,
+      "apg": 1.9,
+      "spg": 1.0,
+      "bpg": 1.7,
+      "fgPct": 57.2
+    },
+    "awards": "All-WAC"
+  },
+  {
+    "name": "Desmond Bane",
+    "team": "tcu",
+    "era": "2020-24",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 16.6,
+      "rpg": 6.5,
+      "apg": 3.9,
+      "spg": 1.2,
+      "bpg": 0.4,
+      "fgPct": 46.1
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Andre Emmett",
+    "team": "texas-tech",
+    "era": "2000-04",
+    "positions": [
+      "SF"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 20.6,
+      "rpg": 6.6,
+      "apg": 2.6,
+      "spg": 1.5,
+      "bpg": 0.6,
+      "fgPct": 48.2
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Jarrett Culver",
+    "team": "texas-tech",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 18.5,
+      "rpg": 6.4,
+      "apg": 3.7,
+      "spg": 1.5,
+      "bpg": 0.6,
+      "fgPct": 46.1
+    },
+    "awards": "Big 12 Player of the Year"
+  },
+  {
+    "name": "Tacko Fall",
+    "team": "ucf",
+    "era": "2015-19",
+    "positions": [
+      "C"
+    ],
+    "rating": 78,
+    "stats": {
+      "ppg": 10.1,
+      "rpg": 7.7,
+      "apg": 0.4,
+      "spg": 0.2,
+      "bpg": 2.6,
+      "fgPct": 74.0
+    },
+    "awards": "AAC Defensive Player of the Year"
+  },
+  {
+    "name": "Jermaine Taylor",
+    "team": "ucf",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 17.0,
+      "rpg": 4.9,
+      "apg": 2.3,
+      "spg": 1.3,
+      "bpg": 0.3,
+      "fgPct": 47.2
+    },
+    "awards": "All-C-USA"
+  },
+  {
+    "name": "Andre Miller",
+    "team": "utah",
+    "era": "2000-04",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 14.4,
+      "rpg": 4.9,
+      "apg": 5.2,
+      "spg": 1.5,
+      "bpg": 0.3,
+      "fgPct": 49.8
+    },
+    "awards": "WAC Player of the Year"
+  },
+  {
+    "name": "Andrew Bogut",
+    "team": "utah",
+    "era": "2005-09",
+    "positions": [
+      "C"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 20.4,
+      "rpg": 12.2,
+      "apg": 2.3,
+      "spg": 0.8,
+      "bpg": 1.9,
+      "fgPct": 61.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Jerry West",
+    "team": "west-virginia",
+    "era": "1960s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 24.8,
+      "rpg": 13.3,
+      "apg": 2.8,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 49.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Da'Sean Butler",
+    "team": "west-virginia",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 16.0,
+      "rpg": 6.6,
+      "apg": 2.3,
+      "spg": 1.2,
+      "bpg": 0.5,
+      "fgPct": 43.6
+    },
+    "awards": "All-Big East"
+  },
+  {
+    "name": "Dana Barros",
+    "team": "boston-college",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 22.3,
+      "rpg": 3.6,
+      "apg": 4.7,
+      "spg": 1.8,
+      "bpg": 0.1,
+      "fgPct": 46.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Craig Smith",
+    "team": "boston-college",
+    "era": "2005-09",
+    "positions": [
+      "PF"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 17.1,
+      "rpg": 8.4,
+      "apg": 1.8,
+      "spg": 0.7,
+      "bpg": 0.6,
+      "fgPct": 56.5
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Horace Grant",
+    "team": "clemson",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 16.4,
+      "rpg": 8.3,
+      "apg": 2.0,
+      "spg": 1.2,
+      "bpg": 1.8,
+      "fgPct": 58.9
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Tree Rollins",
+    "team": "clemson",
+    "era": "1970s",
+    "positions": [
+      "C"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 18.9,
+      "rpg": 9.3,
+      "apg": 1.2,
+      "spg": 0.8,
+      "bpg": 2.8,
+      "fgPct": 51.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Christian Laettner",
+    "team": "duke",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 16.6,
+      "rpg": 7.8,
+      "apg": 2.7,
+      "spg": 1.1,
+      "bpg": 0.7,
+      "fgPct": 55.1
+    },
+    "awards": "2x NCAA Champion"
+  },
+  {
+    "name": "Grant Hill",
+    "team": "duke",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 14.9,
+      "rpg": 6.0,
+      "apg": 3.6,
+      "spg": 1.6,
+      "bpg": 0.9,
+      "fgPct": 53.2
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Sam Cassell",
+    "team": "florida-state",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 18.3,
+      "rpg": 4.9,
+      "apg": 4.8,
+      "spg": 1.8,
+      "bpg": 0.3,
+      "fgPct": 46.2
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Dave Cowens",
+    "team": "florida-state",
+    "era": "1970s",
+    "positions": [
+      "C"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 19.0,
+      "rpg": 17.2,
+      "apg": 2.0,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 51.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Mark Price",
+    "team": "georgia-tech",
+    "era": "1980s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 19.6,
+      "rpg": 3.6,
+      "apg": 5.5,
+      "spg": 1.7,
+      "bpg": 0.1,
+      "fgPct": 51.7
+    },
+    "awards": "ACC Player of the Year"
+  },
+  {
+    "name": "Kenny Anderson",
+    "team": "georgia-tech",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 21.0,
+      "rpg": 6.3,
+      "apg": 8.1,
+      "spg": 2.8,
+      "bpg": 0.3,
+      "fgPct": 48.5
+    },
+    "awards": "ACC Player of the Year"
+  },
+  {
+    "name": "Wes Unseld",
+    "team": "louisville",
+    "era": "1960s",
+    "positions": [
+      "C"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 20.6,
+      "rpg": 18.9,
+      "apg": 1.8,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 52.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Darrell Griffith",
+    "team": "louisville",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 16.2,
+      "rpg": 3.9,
+      "apg": 2.5,
+      "spg": 1.2,
+      "bpg": 0.4,
+      "fgPct": 53.4
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Shane Larkin",
+    "team": "miami",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 14.5,
+      "rpg": 3.8,
+      "apg": 4.6,
+      "spg": 1.8,
+      "bpg": 0.1,
+      "fgPct": 47.9
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Rick Barry",
+    "team": "miami",
+    "era": "1960s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 37.4,
+      "rpg": 17.3,
+      "apg": 2.6,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 54.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "David Thompson",
+    "team": "nc-state",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 26.8,
+      "rpg": 8.1,
+      "apg": 1.8,
+      "spg": 0.8,
+      "bpg": 0.9,
+      "fgPct": 54.8
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Julius Hodge",
+    "team": "nc-state",
+    "era": "2000-04",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 17.4,
+      "rpg": 6.4,
+      "apg": 4.3,
+      "spg": 1.6,
+      "bpg": 0.5,
+      "fgPct": 41.2
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Michael Jordan",
+    "team": "north-carolina",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 17.7,
+      "rpg": 5.0,
+      "apg": 1.8,
+      "spg": 1.7,
+      "bpg": 0.7,
+      "fgPct": 54.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Tyler Hansbrough",
+    "team": "north-carolina",
+    "era": "2005-09",
+    "positions": [
+      "PF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 20.2,
+      "rpg": 8.6,
+      "apg": 1.1,
+      "spg": 0.8,
+      "bpg": 0.5,
+      "fgPct": 54.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Adrian Dantley",
+    "team": "notre-dame",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 25.8,
+      "rpg": 8.3,
+      "apg": 2.1,
+      "spg": 0.8,
+      "bpg": 0.6,
+      "fgPct": 54.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Austin Carr",
+    "team": "notre-dame",
+    "era": "1970s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 34.6,
+      "rpg": 9.0,
+      "apg": 2.3,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 53.5
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "DeJuan Blair",
+    "team": "pittsburgh",
+    "era": "2010-14",
+    "positions": [
+      "PF"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 15.7,
+      "rpg": 12.3,
+      "apg": 1.2,
+      "spg": 1.5,
+      "bpg": 1.7,
+      "fgPct": 59.0
+    },
+    "awards": "Big East Player of the Year"
+  },
+  {
+    "name": "Charles Smith",
+    "team": "pittsburgh",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 22.5,
+      "rpg": 10.4,
+      "apg": 1.8,
+      "spg": 0.9,
+      "bpg": 2.5,
+      "fgPct": 58.2
+    },
+    "awards": "Big East Player of the Year"
+  },
+  {
+    "name": "Kendric Davis",
+    "team": "smu",
+    "era": "2020-24",
+    "positions": [
+      "PG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 19.4,
+      "rpg": 4.2,
+      "apg": 4.4,
+      "spg": 1.2,
+      "bpg": 0.1,
+      "fgPct": 42.1
+    },
+    "awards": "All-AAC"
+  },
+  {
+    "name": "Shake Milton",
+    "team": "smu",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 13.4,
+      "rpg": 4.0,
+      "apg": 3.4,
+      "spg": 1.3,
+      "bpg": 0.4,
+      "fgPct": 45.4
+    },
+    "awards": "All-AAC"
+  },
+  {
+    "name": "Mark Madsen",
+    "team": "stanford",
+    "era": "2000-04",
+    "positions": [
+      "PF"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 16.5,
+      "rpg": 10.9,
+      "apg": 2.4,
+      "spg": 1.0,
+      "bpg": 1.2,
+      "fgPct": 56.1
+    },
+    "awards": "Pac-10 Player of the Year"
+  },
+  {
+    "name": "Brook Lopez",
+    "team": "stanford",
+    "era": "2005-09",
+    "positions": [
+      "C"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 19.3,
+      "rpg": 8.2,
+      "apg": 1.0,
+      "spg": 0.5,
+      "bpg": 2.1,
+      "fgPct": 50.4
+    },
+    "awards": "All-Pac-10"
+  },
+  {
+    "name": "Carmelo Anthony",
+    "team": "syracuse",
+    "era": "2000-04",
+    "positions": [
+      "SF"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 22.2,
+      "rpg": 10.0,
+      "apg": 2.2,
+      "spg": 1.6,
+      "bpg": 0.9,
+      "fgPct": 45.3
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Derrick Coleman",
+    "team": "syracuse",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 16.9,
+      "rpg": 9.1,
+      "apg": 2.8,
+      "spg": 1.2,
+      "bpg": 1.4,
+      "fgPct": 53.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Ralph Sampson",
+    "team": "virginia",
+    "era": "1980s",
+    "positions": [
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 19.9,
+      "rpg": 11.4,
+      "apg": 1.7,
+      "spg": 0.8,
+      "bpg": 3.3,
+      "fgPct": 57.4
+    },
+    "awards": "3x National Player of the Year"
+  },
+  {
+    "name": "Malcolm Brogdon",
+    "team": "virginia",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 14.0,
+      "rpg": 4.0,
+      "apg": 2.3,
+      "spg": 0.8,
+      "bpg": 0.2,
+      "fgPct": 46.1
+    },
+    "awards": "ACC Player of the Year"
+  },
+  {
+    "name": "Dell Curry",
+    "team": "virginia-tech",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 18.4,
+      "rpg": 4.9,
+      "apg": 1.8,
+      "spg": 1.4,
+      "bpg": 0.3,
+      "fgPct": 47.1
+    },
+    "awards": "Metro Player of the Year"
+  },
+  {
+    "name": "Bimbo Coles",
+    "team": "virginia-tech",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 18.9,
+      "rpg": 3.9,
+      "apg": 4.8,
+      "spg": 2.2,
+      "bpg": 0.2,
+      "fgPct": 47.4
+    },
+    "awards": "All-Metro"
+  },
+  {
+    "name": "Tim Duncan",
+    "team": "wake-forest",
+    "era": "1990s",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 16.5,
+      "rpg": 12.3,
+      "apg": 2.3,
+      "spg": 0.8,
+      "bpg": 3.8,
+      "fgPct": 57.7
+    },
+    "awards": "2x National Player of the Year"
+  },
+  {
+    "name": "Chris Paul",
+    "team": "wake-forest",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 4.0,
+      "apg": 6.6,
+      "spg": 2.4,
+      "bpg": 0.2,
+      "fgPct": 47.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Kemba Walker",
+    "team": "uconn",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 16.1,
+      "rpg": 4.4,
+      "apg": 4.1,
+      "spg": 1.6,
+      "bpg": 0.3,
+      "fgPct": 41.8
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Shabazz Napier",
+    "team": "uconn",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 13.7,
+      "rpg": 4.7,
+      "apg": 4.3,
+      "spg": 1.8,
+      "bpg": 0.2,
+      "fgPct": 41.2
+    },
+    "awards": "2x NCAA Champion"
+  },
+  {
+    "name": "Doug McDermott",
+    "team": "creighton",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 26.7,
+      "rpg": 7.5,
+      "apg": 1.5,
+      "spg": 1.1,
+      "bpg": 0.4,
+      "fgPct": 54.8
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Kyle Korver",
+    "team": "creighton",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 14.1,
+      "rpg": 4.9,
+      "apg": 2.0,
+      "spg": 0.9,
+      "bpg": 0.4,
+      "fgPct": 48.4
+    },
+    "awards": "MVC Player of the Year"
+  },
+  {
+    "name": "Dwyane Wade",
+    "team": "marquette",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 19.7,
+      "rpg": 6.5,
+      "apg": 3.4,
+      "spg": 2.1,
+      "bpg": 1.2,
+      "fgPct": 50.1
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "Butch Lee",
+    "team": "marquette",
+    "era": "1970s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 16.3,
+      "rpg": 3.0,
+      "apg": 4.7,
+      "spg": 1.5,
+      "bpg": 0.1,
+      "fgPct": 48.2
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Paul Arizin",
+    "team": "villanova",
+    "era": "1960s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 25.3,
+      "rpg": 10.4,
+      "apg": 2.0,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 47.1
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Jalen Brunson",
+    "team": "villanova",
+    "era": "2015-19",
+    "positions": [
+      "PG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 14.4,
+      "rpg": 2.9,
+      "apg": 3.6,
+      "spg": 0.9,
+      "bpg": 0.0,
+      "fgPct": 50.8
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Patrick Ewing",
+    "team": "georgetown",
+    "era": "1980s",
+    "positions": [
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 9.2,
+      "apg": 1.5,
+      "spg": 0.9,
+      "bpg": 3.4,
+      "fgPct": 62.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Alonzo Mourning",
+    "team": "georgetown",
+    "era": "1990s",
+    "positions": [
+      "C"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 16.4,
+      "rpg": 8.6,
+      "apg": 1.0,
+      "spg": 0.6,
+      "bpg": 3.0,
+      "fgPct": 59.5
+    },
+    "awards": "Big East Defensive Player of the Year"
+  },
+  {
+    "name": "Chris Mullin",
+    "team": "st-johns",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 19.5,
+      "rpg": 4.5,
+      "apg": 3.3,
+      "spg": 1.5,
+      "bpg": 0.3,
+      "fgPct": 54.5
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Mark Jackson",
+    "team": "st-johns",
+    "era": "1980s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 10.1,
+      "rpg": 2.8,
+      "apg": 5.6,
+      "spg": 1.8,
+      "bpg": 0.1,
+      "fgPct": 46.5
+    },
+    "awards": "All-Big East"
+  },
+  {
+    "name": "David West",
+    "team": "xavier",
+    "era": "2000-04",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 20.4,
+      "rpg": 11.7,
+      "apg": 2.3,
+      "spg": 1.3,
+      "bpg": 1.7,
+      "fgPct": 53.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Byron Larkin",
+    "team": "xavier",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 21.9,
+      "rpg": 4.4,
+      "apg": 3.3,
+      "spg": 1.6,
+      "bpg": 0.3,
+      "fgPct": 49.9
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Adam Morrison",
+    "team": "gonzaga",
+    "era": "2005-09",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 24.1,
+      "rpg": 5.7,
+      "apg": 1.8,
+      "spg": 1.2,
+      "bpg": 0.3,
+      "fgPct": 49.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Drew Timme",
+    "team": "gonzaga",
+    "era": "2020-24",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 17.2,
+      "rpg": 6.7,
+      "apg": 2.4,
+      "spg": 0.8,
+      "bpg": 0.7,
+      "fgPct": 59.9
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "Matthew Dellavedova",
+    "team": "saint-marys",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 15.4,
+      "rpg": 3.5,
+      "apg": 5.3,
+      "spg": 1.3,
+      "bpg": 0.1,
+      "fgPct": 44.0
+    },
+    "awards": "All-WCC"
+  },
+  {
+    "name": "Patty Mills",
+    "team": "saint-marys",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 18.4,
+      "rpg": 3.5,
+      "apg": 3.9,
+      "spg": 1.4,
+      "bpg": 0.1,
+      "fgPct": 44.0
+    },
+    "awards": "WCC Freshman of the Year"
+  },
+  {
+    "name": "Kawhi Leonard",
+    "team": "san-diego-state",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 14.1,
+      "rpg": 10.2,
+      "apg": 2.2,
+      "spg": 1.4,
+      "bpg": 0.7,
+      "fgPct": 49.8
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Michael Cage",
+    "team": "san-diego-state",
+    "era": "1980s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 18.6,
+      "rpg": 13.0,
+      "apg": 1.0,
+      "spg": 0.9,
+      "bpg": 1.8,
+      "fgPct": 54.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Larry Johnson",
+    "team": "unlv",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 22.7,
+      "rpg": 11.2,
+      "apg": 3.3,
+      "spg": 1.8,
+      "bpg": 0.8,
+      "fgPct": 56.9
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Stacey Augmon",
+    "team": "unlv",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 14.7,
+      "rpg": 5.5,
+      "apg": 2.9,
+      "spg": 2.3,
+      "bpg": 1.2,
+      "fgPct": 51.7
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Penny Hardaway",
+    "team": "memphis",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 22.8,
+      "rpg": 8.5,
+      "apg": 6.4,
+      "spg": 2.4,
+      "bpg": 1.2,
+      "fgPct": 50.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Derrick Rose",
+    "team": "memphis",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 14.9,
+      "rpg": 4.5,
+      "apg": 4.7,
+      "spg": 1.2,
+      "bpg": 0.4,
+      "fgPct": 47.7
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Don May",
+    "team": "dayton",
+    "era": "1960s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 23.3,
+      "rpg": 8.7,
+      "apg": 2.1,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 51.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Obi Toppin",
+    "team": "dayton",
+    "era": "2020-24",
+    "positions": [
+      "PF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 20.0,
+      "rpg": 7.5,
+      "apg": 2.2,
+      "spg": 1.0,
+      "bpg": 1.2,
+      "fgPct": 63.3
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Larry Hughes",
+    "team": "saint-louis",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 20.6,
+      "rpg": 6.7,
+      "apg": 2.7,
+      "spg": 1.9,
+      "bpg": 1.0,
+      "fgPct": 50.8
+    },
+    "awards": "Conference USA Player of the Year"
+  },
+  {
+    "name": "Erwin Claggett",
+    "team": "saint-louis",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 22.2,
+      "rpg": 3.7,
+      "apg": 2.5,
+      "spg": 1.4,
+      "bpg": 0.2,
+      "fgPct": 47.0
+    },
+    "awards": "All-Conference USA"
+  },
+  {
+    "name": "Eric Maynor",
+    "team": "vcu",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 16.6,
+      "rpg": 3.7,
+      "apg": 6.0,
+      "spg": 1.8,
+      "bpg": 0.1,
+      "fgPct": 44.3
+    },
+    "awards": "CAA Player of the Year"
+  },
+  {
+    "name": "Bones Hyland",
+    "team": "vcu",
+    "era": "2020-24",
+    "positions": [
+      "SG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 19.5,
+      "rpg": 4.7,
+      "apg": 2.1,
+      "spg": 1.9,
+      "bpg": 0.2,
+      "fgPct": 44.7
+    },
+    "awards": "A-10 Player of the Year"
+  },
+  {
+    "name": "Alfredrick Hughes",
+    "team": "loyola-chicago",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 27.2,
+      "rpg": 8.6,
+      "apg": 2.6,
+      "spg": 1.3,
+      "bpg": 0.5,
+      "fgPct": 48.2
+    },
+    "awards": "2x MVC Player of the Year"
+  },
+  {
+    "name": "Clayton Custer",
+    "team": "loyola-chicago",
+    "era": "2015-19",
+    "positions": [
+      "PG"
+    ],
+    "rating": 78,
+    "stats": {
+      "ppg": 13.2,
+      "rpg": 3.1,
+      "apg": 4.2,
+      "spg": 1.4,
+      "bpg": 0.1,
+      "fgPct": 49.4
+    },
+    "awards": "MVC Player of the Year"
+  },
+  {
+    "name": "Lewis Lloyd",
+    "team": "drake",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 30.2,
+      "rpg": 8.8,
+      "apg": 2.7,
+      "spg": 1.5,
+      "bpg": 0.3,
+      "fgPct": 49.5
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Adam Emmenecker",
+    "team": "drake",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 76,
+    "stats": {
+      "ppg": 12.7,
+      "rpg": 4.1,
+      "apg": 3.9,
+      "spg": 1.4,
+      "bpg": 0.2,
+      "fgPct": 47.3
+    },
+    "awards": "MVC Player of the Year"
+  },
+  {
+    "name": "Xavier McDaniel",
+    "team": "wichita-state",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 27.2,
+      "rpg": 14.8,
+      "apg": 1.6,
+      "spg": 1.6,
+      "bpg": 1.0,
+      "fgPct": 54.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Fred VanVleet",
+    "team": "wichita-state",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 11.6,
+      "rpg": 3.0,
+      "apg": 5.3,
+      "spg": 1.8,
+      "bpg": 0.1,
+      "fgPct": 41.6
+    },
+    "awards": "MVC Player of the Year"
+  },
+  {
+    "name": "Stephen Curry",
+    "team": "davidson",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 25.3,
+      "rpg": 4.5,
+      "apg": 3.7,
+      "spg": 2.1,
+      "bpg": 0.3,
+      "fgPct": 46.7
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "Brendan Winters",
+    "team": "davidson",
+    "era": "2005-09",
+    "positions": [
+      "SF"
+    ],
+    "rating": 75,
+    "stats": {
+      "ppg": 14.6,
+      "rpg": 4.9,
+      "apg": 2.0,
+      "spg": 0.8,
+      "bpg": 0.3,
+      "fgPct": 41.3
+    },
+    "awards": "All-Southern"
+  },
+  {
+    "name": "Gordon Hayward",
+    "team": "butler",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 15.5,
+      "rpg": 8.2,
+      "apg": 2.1,
+      "spg": 1.1,
+      "bpg": 0.8,
+      "fgPct": 46.3
+    },
+    "awards": "Horizon League Player of the Year"
+  },
+  {
+    "name": "Shelvin Mack",
+    "team": "butler",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 15.2,
+      "rpg": 3.8,
+      "apg": 3.5,
+      "spg": 1.2,
+      "bpg": 0.2,
+      "fgPct": 44.1
+    },
+    "awards": "All-Horizon League"
+  },
+  {
+    "name": "John Wall",
+    "team": "kentucky",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 16.6,
+      "rpg": 4.3,
+      "apg": 6.5,
+      "spg": 1.8,
+      "bpg": 0.5,
+      "fgPct": 46.1
+    },
+    "awards": "SEC Player of the Year"
+  },
+  {
+    "name": "Oscar Tshiebwe",
+    "team": "kentucky",
+    "era": "2020-24",
+    "positions": [
+      "C"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 16.5,
+      "rpg": 13.7,
+      "apg": 1.6,
+      "spg": 1.1,
+      "bpg": 1.6,
+      "fgPct": 56.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Jamal Mashburn",
+    "team": "kentucky",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 18.0,
+      "rpg": 8.4,
+      "apg": 3.0,
+      "spg": 1.1,
+      "bpg": 0.5,
+      "fgPct": 50.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Antoine Walker",
+    "team": "kentucky",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 17.5,
+      "rpg": 8.4,
+      "apg": 1.7,
+      "spg": 1.1,
+      "bpg": 0.7,
+      "fgPct": 47.9
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Zion Williamson",
+    "team": "duke",
+    "era": "2015-19",
+    "positions": [
+      "PF"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 22.6,
+      "rpg": 8.9,
+      "apg": 2.1,
+      "spg": 2.1,
+      "bpg": 1.8,
+      "fgPct": 68.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "J.J. Redick",
+    "team": "duke",
+    "era": "2005-09",
+    "positions": [
+      "SG"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 26.8,
+      "rpg": 2.0,
+      "apg": 2.6,
+      "spg": 1.2,
+      "bpg": 0.1,
+      "fgPct": 47.4
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Kyrie Irving",
+    "team": "duke",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 17.5,
+      "rpg": 3.4,
+      "apg": 4.3,
+      "spg": 1.5,
+      "bpg": 0.5,
+      "fgPct": 53.2
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Shane Battier",
+    "team": "duke",
+    "era": "2000-04",
+    "positions": [
+      "SF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 19.9,
+      "rpg": 7.3,
+      "apg": 1.8,
+      "spg": 2.1,
+      "bpg": 2.3,
+      "fgPct": 47.6
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "James Worthy",
+    "team": "north-carolina",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 15.6,
+      "rpg": 6.3,
+      "apg": 2.4,
+      "spg": 1.2,
+      "bpg": 0.7,
+      "fgPct": 57.3
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Vince Carter",
+    "team": "north-carolina",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 15.6,
+      "rpg": 5.1,
+      "apg": 2.0,
+      "spg": 1.6,
+      "bpg": 1.0,
+      "fgPct": 47.3
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Antawn Jamison",
+    "team": "north-carolina",
+    "era": "1990s",
+    "positions": [
+      "PF"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 22.2,
+      "rpg": 10.5,
+      "apg": 1.8,
+      "spg": 1.0,
+      "bpg": 0.9,
+      "fgPct": 57.9
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Phil Ford",
+    "team": "north-carolina",
+    "era": "1970s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 18.6,
+      "rpg": 2.7,
+      "apg": 7.7,
+      "spg": 2.3,
+      "bpg": 0.1,
+      "fgPct": 51.8
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Larry Bird",
+    "team": "indiana",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 97,
+    "stats": {
+      "ppg": 30.3,
+      "rpg": 13.3,
+      "apg": 4.6,
+      "spg": 1.8,
+      "bpg": 0.8,
+      "fgPct": 53.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Jo Jo White",
+    "team": "kansas",
+    "era": "1960s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 15.3,
+      "rpg": 5.4,
+      "apg": 3.7,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 48.7
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Paul Pierce",
+    "team": "kansas",
+    "era": "1990s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 16.4,
+      "rpg": 6.3,
+      "apg": 2.3,
+      "spg": 1.1,
+      "bpg": 0.8,
+      "fgPct": 48.0
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Frank Mason III",
+    "team": "kansas",
+    "era": "2015-19",
+    "positions": [
+      "PG"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 20.9,
+      "rpg": 4.2,
+      "apg": 5.2,
+      "spg": 1.3,
+      "bpg": 0.2,
+      "fgPct": 49.0
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Reggie Miller",
+    "team": "ucla",
+    "era": "1980s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 20.1,
+      "rpg": 5.0,
+      "apg": 2.3,
+      "spg": 1.7,
+      "bpg": 0.3,
+      "fgPct": 54.6
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Marques Johnson",
+    "team": "ucla",
+    "era": "1970s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 93,
+    "stats": {
+      "ppg": 21.1,
+      "rpg": 11.1,
+      "apg": 3.5,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 55.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Gail Goodrich",
+    "team": "ucla",
+    "era": "1960s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 24.8,
+      "rpg": 8.0,
+      "apg": 3.2,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 52.1
+    },
+    "awards": "2x NCAA Champion"
+  },
+  {
+    "name": "Mateen Cleaves",
+    "team": "michigan-state",
+    "era": "2000-04",
+    "positions": [
+      "PG"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 14.8,
+      "rpg": 3.7,
+      "apg": 6.6,
+      "spg": 1.5,
+      "bpg": 0.2,
+      "fgPct": 45.4
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Denzel Valentine",
+    "team": "michigan-state",
+    "era": "2015-19",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 19.2,
+      "rpg": 7.8,
+      "apg": 7.5,
+      "spg": 0.9,
+      "bpg": 0.8,
+      "fgPct": 46.2
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Zach Edey",
+    "team": "purdue",
+    "era": "2020-24",
+    "positions": [
+      "C"
+    ],
+    "rating": 95,
+    "stats": {
+      "ppg": 25.2,
+      "rpg": 12.2,
+      "apg": 2.0,
+      "spg": 0.2,
+      "bpg": 2.2,
+      "fgPct": 62.3
+    },
+    "awards": "2x National Player of the Year"
+  },
+  {
+    "name": "Carsen Edwards",
+    "team": "purdue",
+    "era": "2015-19",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 24.3,
+      "rpg": 3.6,
+      "apg": 2.9,
+      "spg": 1.3,
+      "bpg": 0.2,
+      "fgPct": 39.4
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Devin Harris",
+    "team": "wisconsin",
+    "era": "2000-04",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 14.3,
+      "rpg": 4.5,
+      "apg": 4.6,
+      "spg": 1.8,
+      "bpg": 0.2,
+      "fgPct": 45.3
+    },
+    "awards": "Big Ten Player of the Year"
+  },
+  {
+    "name": "Buddy Hield",
+    "team": "oklahoma",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 94,
+    "stats": {
+      "ppg": 25.0,
+      "rpg": 5.7,
+      "apg": 2.0,
+      "spg": 1.1,
+      "bpg": 0.5,
+      "fgPct": 50.1
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Cade Cunningham",
+    "team": "oklahoma-state",
+    "era": "2020-24",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 20.1,
+      "rpg": 6.2,
+      "apg": 3.5,
+      "spg": 1.6,
+      "bpg": 0.8,
+      "fgPct": 43.8
+    },
+    "awards": "Big 12 Player of the Year"
+  },
+  {
+    "name": "Keegan Murray",
+    "team": "iowa",
+    "era": "2020-24",
+    "positions": [
+      "PF"
+    ],
+    "rating": 90,
+    "stats": {
+      "ppg": 23.5,
+      "rpg": 8.7,
+      "apg": 1.5,
+      "spg": 1.3,
+      "bpg": 1.9,
+      "fgPct": 55.4
+    },
+    "awards": "Consensus All-American"
+  },
+  {
+    "name": "DeMar DeRozan",
+    "team": "usc",
+    "era": "2005-09",
+    "positions": [
+      "SF"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 13.9,
+      "rpg": 5.7,
+      "apg": 1.5,
+      "spg": 0.9,
+      "bpg": 0.5,
+      "fgPct": 52.3
+    },
+    "awards": "Pac-10 Tournament MVP"
+  },
+  {
+    "name": "Gilbert Arenas",
+    "team": "arizona",
+    "era": "2000-04",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 16.2,
+      "rpg": 3.4,
+      "apg": 2.2,
+      "spg": 1.3,
+      "bpg": 0.3,
+      "fgPct": 43.0
+    },
+    "awards": "All-Pac-10"
+  },
+  {
+    "name": "Rui Hachimura",
+    "team": "gonzaga",
+    "era": "2015-19",
+    "positions": [
+      "PF"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 19.7,
+      "rpg": 6.5,
+      "apg": 1.5,
+      "spg": 0.9,
+      "bpg": 0.7,
+      "fgPct": 59.1
+    },
+    "awards": "WCC Player of the Year"
+  },
+  {
+    "name": "Ray Allen",
+    "team": "uconn",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 19.0,
+      "rpg": 6.8,
+      "apg": 2.3,
+      "spg": 1.7,
+      "bpg": 0.5,
+      "fgPct": 50.2
+    },
+    "awards": "Big East Player of the Year"
+  },
+  {
+    "name": "Emeka Okafor",
+    "team": "uconn",
+    "era": "2000-04",
+    "positions": [
+      "C"
+    ],
+    "rating": 91,
+    "stats": {
+      "ppg": 17.6,
+      "rpg": 11.5,
+      "apg": 0.8,
+      "spg": 1.3,
+      "bpg": 4.1,
+      "fgPct": 59.5
+    },
+    "awards": "National Player of the Year"
+  },
+  {
+    "name": "Richard Hamilton",
+    "team": "uconn",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 19.5,
+      "rpg": 5.2,
+      "apg": 2.5,
+      "spg": 1.3,
+      "bpg": 0.2,
+      "fgPct": 45.0
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Pearl Washington",
+    "team": "syracuse",
+    "era": "1980s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 15.8,
+      "rpg": 3.3,
+      "apg": 6.7,
+      "spg": 2.4,
+      "bpg": 0.1,
+      "fgPct": 49.2
+    },
+    "awards": "All-Big East"
+  },
+  {
+    "name": "Donovan Mitchell",
+    "team": "louisville",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 15.6,
+      "rpg": 4.9,
+      "apg": 2.7,
+      "spg": 2.1,
+      "bpg": 0.5,
+      "fgPct": 40.8
+    },
+    "awards": "All-ACC"
+  },
+  {
+    "name": "Pervis Ellison",
+    "team": "louisville",
+    "era": "1980s",
+    "positions": [
+      "C"
+    ],
+    "rating": 89,
+    "stats": {
+      "ppg": 13.1,
+      "rpg": 8.1,
+      "apg": 1.3,
+      "spg": 0.7,
+      "bpg": 1.9,
+      "fgPct": 57.4
+    },
+    "awards": "NCAA Final Four MOP"
+  },
+  {
+    "name": "Tyreke Evans",
+    "team": "memphis",
+    "era": "2005-09",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 17.1,
+      "rpg": 5.4,
+      "apg": 3.9,
+      "spg": 1.9,
+      "bpg": 0.8,
+      "fgPct": 45.5
+    },
+    "awards": "Conference USA Player of the Year"
+  },
+  {
+    "name": "Allen Iverson",
+    "team": "georgetown",
+    "era": "1990s",
+    "positions": [
+      "SG"
+    ],
+    "rating": 92,
+    "stats": {
+      "ppg": 22.9,
+      "rpg": 3.6,
+      "apg": 4.6,
+      "spg": 3.5,
+      "bpg": 0.3,
+      "fgPct": 44.8
+    },
+    "awards": "Big East Defensive Player of the Year"
+  },
+  {
+    "name": "Jimmy Butler",
+    "team": "marquette",
+    "era": "2010-14",
+    "positions": [
+      "SF"
+    ],
+    "rating": 82,
+    "stats": {
+      "ppg": 15.7,
+      "rpg": 6.1,
+      "apg": 1.8,
+      "spg": 1.4,
+      "bpg": 0.4,
+      "fgPct": 49.9
+    },
+    "awards": "All-Big East"
+  },
+  {
+    "name": "Tu Holloway",
+    "team": "xavier",
+    "era": "2010-14",
+    "positions": [
+      "PG"
+    ],
+    "rating": 81,
+    "stats": {
+      "ppg": 19.7,
+      "rpg": 5.0,
+      "apg": 5.4,
+      "spg": 1.4,
+      "bpg": 0.3,
+      "fgPct": 43.3
+    },
+    "awards": "A-10 Player of the Year"
+  },
+  {
+    "name": "Kyle Lowry",
+    "team": "villanova",
+    "era": "2005-09",
+    "positions": [
+      "PG"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 11.0,
+      "rpg": 3.9,
+      "apg": 3.2,
+      "spg": 1.8,
+      "bpg": 0.3,
+      "fgPct": 47.9
+    },
+    "awards": "Big East All-Defensive"
+  },
+  {
+    "name": "Josh Hart",
+    "team": "villanova",
+    "era": "2015-19",
+    "positions": [
+      "SG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 18.7,
+      "rpg": 6.4,
+      "apg": 2.9,
+      "spg": 1.6,
+      "bpg": 0.5,
+      "fgPct": 51.0
+    },
+    "awards": "Big East Player of the Year"
+  },
+  {
+    "name": "Grant Williams",
+    "team": "tennessee",
+    "era": "2015-19",
+    "positions": [
+      "PF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 18.8,
+      "rpg": 7.5,
+      "apg": 3.2,
+      "spg": 1.2,
+      "bpg": 1.5,
+      "fgPct": 53.6
+    },
+    "awards": "2x SEC Player of the Year"
+  },
+  {
+    "name": "Al Horford",
+    "team": "florida",
+    "era": "2005-09",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 13.2,
+      "rpg": 9.5,
+      "apg": 2.3,
+      "spg": 0.9,
+      "bpg": 1.5,
+      "fgPct": 61.0
+    },
+    "awards": "2x NCAA Champion"
+  },
+  {
+    "name": "Jared Butler",
+    "team": "baylor",
+    "era": "2020-24",
+    "positions": [
+      "SG"
+    ],
+    "rating": 85,
+    "stats": {
+      "ppg": 16.7,
+      "rpg": 3.3,
+      "apg": 4.8,
+      "spg": 2.1,
+      "bpg": 0.4,
+      "fgPct": 47.1
+    },
+    "awards": "NCAA Champion"
+  },
+  {
+    "name": "Elvin Hayes",
+    "team": "houston",
+    "era": "1960s",
+    "positions": [
+      "PF",
+      "C"
+    ],
+    "rating": 96,
+    "stats": {
+      "ppg": 31.0,
+      "rpg": 17.2,
+      "apg": 2.0,
+      "spg": 0.0,
+      "bpg": 0.0,
+      "fgPct": 55.7
+    },
+    "awards": "2x National Player of the Year"
+  },
+  {
+    "name": "Nick Van Exel",
+    "team": "cincinnati",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 86,
+    "stats": {
+      "ppg": 18.3,
+      "rpg": 3.5,
+      "apg": 4.4,
+      "spg": 1.6,
+      "bpg": 0.2,
+      "fgPct": 48.5
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Roosevelt Chapman",
+    "team": "dayton",
+    "era": "1980s",
+    "positions": [
+      "SF"
+    ],
+    "rating": 84,
+    "stats": {
+      "ppg": 18.3,
+      "rpg": 7.3,
+      "apg": 2.0,
+      "spg": 1.2,
+      "bpg": 0.5,
+      "fgPct": 47.4
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Jalen McDaniels",
+    "team": "san-diego-state",
+    "era": "2015-19",
+    "positions": [
+      "SF"
+    ],
+    "rating": 80,
+    "stats": {
+      "ppg": 15.9,
+      "rpg": 8.3,
+      "apg": 2.1,
+      "spg": 0.8,
+      "bpg": 0.9,
+      "fgPct": 49.3
+    },
+    "awards": "All-Mountain West"
+  },
+  {
+    "name": "LaMarcus Aldridge",
+    "team": "texas",
+    "era": "2005-09",
+    "positions": [
+      "PF"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 15.0,
+      "rpg": 9.2,
+      "apg": 1.2,
+      "spg": 0.8,
+      "bpg": 1.9,
+      "fgPct": 57.8
+    },
+    "awards": "All-Big 12"
+  },
+  {
+    "name": "Steve Francis",
+    "team": "maryland",
+    "era": "1990s",
+    "positions": [
+      "PG"
+    ],
+    "rating": 88,
+    "stats": {
+      "ppg": 17.0,
+      "rpg": 4.5,
+      "apg": 4.0,
+      "spg": 2.0,
+      "bpg": 0.5,
+      "fgPct": 47.0
+    },
+    "awards": "All-American"
+  },
+  {
+    "name": "Jalen Rose",
+    "team": "michigan",
+    "era": "1990s",
+    "positions": [
+      "G-F"
+    ],
+    "rating": 87,
+    "stats": {
+      "ppg": 19.9,
+      "rpg": 6.2,
+      "apg": 4.8,
+      "spg": 1.3,
+      "bpg": 0.7,
+      "fgPct": 47.4
+    },
+    "awards": "All-American"
+  }
+]

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make Your 82-0 College Basketball Roster</title>
+  <meta name="description" content="Spin college basketball legends by team and era. Draft your starting five and see if you can go 82-0." />
+  <meta property="og:title" content="Make Your 82-0 College Basketball Roster" />
+  <meta property="og:description" content="Spin college basketball legends by team and era. Draft your starting five and see if you can go 82-0." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Make Your 82-0 College Basketball Roster" />
+  <meta name="twitter:description" content="Spin college basketball legends by team and era. Draft your starting five and see if you can go 82-0." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="screen-loading" class="screen active">
+      <div class="loading-panel">
+        <div class="hero-badge">Undefeated CBB</div>
+        <h2 id="loading-title">Loading player database…</h2>
+        <p class="loading-hint" id="loading-hint">Loading college basketball players</p>
+        <div class="loading-progress-wrap">
+          <div class="loading-progress-bar" id="loading-progress-bar"></div>
+        </div>
+        <p class="loading-status" id="loading-status"></p>
+        <p id="loading-error" class="loading-error"></p>
+      </div>
+    </section>
+
+    <section id="screen-home" class="screen">
+      <header class="hero">
+        <div class="hero-badge">Undefeated CBB</div>
+        <h1>Can you go <span class="accent">82-0</span> in CBB?</h1>
+        <p class="hero-sub">Build your starting five. Run the table. Chase perfection.</p>
+      </header>
+
+      <div class="mode-grid">
+        <div class="mode-card">
+          <h3>Your Starting Five</h3>
+          <p class="mode-desc">Five rounds — one pick per spin</p>
+
+          <div class="roster-preview" id="roster-preview">
+            <div class="roster-preview-block">
+              <span class="preview-side-label">LINEUP</span>
+              <div class="pos-diagram" id="preview-roster"></div>
+            </div>
+          </div>
+
+          <div class="filter-row">
+            <label>Filter by</label>
+            <select id="filter-type">
+              <option value="all">All Teams</option>
+              <option value="power5">Power Conferences</option>
+              <option value="conference">Conference</option>
+              <option value="team">Single Team</option>
+            </select>
+            <select id="filter-value" class="hidden"></select>
+          </div>
+          <div id="filter-conferences" class="filter-conferences hidden"></div>
+
+          <div class="filter-eras-wrap">
+            <div class="filter-eras-header">
+              <label>Era</label>
+              <button type="button" class="link-btn small" id="filter-eras-toggle">Clear all</button>
+            </div>
+            <div id="filter-eras" class="filter-conferences filter-eras"></div>
+          </div>
+
+          <h3 class="section-label">Difficulty</h3>
+          <p class="mode-desc">Pick your roster to go 82-0</p>
+          <div class="scope-toggle" id="difficulty-toggle">
+            <button type="button" class="scope-btn" data-difficulty="easy">Easy</button>
+            <button type="button" class="scope-btn active" data-difficulty="normal">Normal</button>
+            <button type="button" class="scope-btn" data-difficulty="hard">Hard</button>
+          </div>
+
+          <div class="play-modes">
+            <button class="play-mode-btn" id="btn-classic">
+              <span class="mode-emoji">💯</span>
+              <div>
+                <strong>Classic</strong>
+                <span>Full stats visible — make informed picks.</span>
+              </div>
+            </button>
+            <button class="play-mode-btn" id="btn-iq">
+              <span class="mode-emoji">🧠</span>
+              <div>
+                <strong>Hoop IQ</strong>
+                <span>Stats hidden — draft from memory. Ball knowers only.</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="home-footer">
+        <button class="link-btn" id="btn-how-to-play">How to Play</button>
+      </footer>
+    </section>
+
+    <section id="screen-rules" class="screen">
+      <button class="back-btn" data-target="screen-home">← Back</button>
+      <article class="rules-content">
+        <h1>How to Play</h1>
+        <p>Assemble an all-time college basketball starting five and see if they could go a perfect 82-0 — inspired by <a href="https://82-0.com" target="_blank" rel="noopener">82-0.com</a>.</p>
+
+        <div class="rule-step">
+          <span class="step-num">1</span>
+          <div>
+            <h3>🎰 Spin the slot machine</h3>
+            <p>Each round, press SPIN to roll a random team and era (e.g. "Duke, 1990s"). Legend eras span full decades for classic programs.</p>
+          </div>
+        </div>
+
+        <div class="rule-step">
+          <span class="step-num">2</span>
+          <div>
+            <h3>📋 Draft your starting five</h3>
+            <p>Pick one player from each spin. Fill all five positions: PG, SG, SF, PF, and C. Multi-position players can slot into any eligible spot.</p>
+          </div>
+        </div>
+
+        <div class="rule-step">
+          <span class="step-num">3</span>
+          <div>
+            <h3>🔄 Use re-rolls wisely</h3>
+            <p>Don't like a spin? You get two re-rolls per run: one <strong>Re-roll Team</strong> (new team, same era) and one <strong>Re-roll Era</strong> (same team, new era). A team + era combo never repeats in a run.</p>
+          </div>
+        </div>
+
+        <div class="rule-step">
+          <span class="step-num">4</span>
+          <div>
+            <h3>🏆 Simulate your season</h3>
+            <p>Once all five spots are filled, your team plays an 82-game season. Go undefeated to hit the perfect 82-0 record.</p>
+          </div>
+        </div>
+
+        <div class="roster-diagram">
+          <h3>Your lineup</h3>
+          <div class="diagram-side">
+            <div class="pos-chips">PG · SG · SF · PF · C</div>
+          </div>
+        </div>
+
+        <div class="scoring-info">
+          <h3>📊 How scoring works</h3>
+          <p>Your season is rated on <strong>PPG, RPG, APG, SPG, and BPG</strong> — era-adjusted so a 30 PPG scorer in the 1960s counts differently than today.</p>
+          <p><strong>Premium positions</strong> count extra in Team Power — PG and C matter most. Landing legends and stacking stats across all five categories is the path to 82-0.</p>
+          <div class="weight-chips">
+            <span class="weight-chip premium">PG 1.35×</span>
+            <span class="weight-chip premium">C 1.2×</span>
+            <span class="weight-chip">everyone else 1.0×</span>
+          </div>
+          <p class="scoring-note">Team Power needed for 82-0 depends on difficulty: <strong>79+ Easy</strong>, <strong>85+ Normal</strong>, <strong>91+ Hard</strong>.</p>
+          <div class="grade-scale">
+            <span class="grade s">S+ 82-0 Undefeated</span>
+            <span class="grade a">A 75+ wins</span>
+            <span class="grade b">B 65–74 wins</span>
+            <span class="grade c">C 55–64 wins</span>
+            <span class="grade d">D 45–54 wins</span>
+            <span class="grade f">F below 45</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="screen-game" class="screen">
+      <header class="game-header">
+        <button class="back-btn small" id="btn-quit">← Quit</button>
+        <div class="game-meta">
+          <span id="game-mode-label">Classic</span>
+          <span class="divider">·</span>
+          <span id="game-difficulty-label">Normal</span>
+          <span class="divider">·</span>
+          <span id="draft-progress">Round 1/5</span>
+        </div>
+        <div class="reroll-badge" id="reroll-badge">Re-roll available</div>
+      </header>
+
+      <div class="game-layout">
+        <aside class="roster-panel">
+          <div class="roster-board roster-board-single" id="roster-board">
+            <div class="roster-side active-phase">
+              <span class="roster-side-label">LINEUP</span>
+              <div class="roster-pos-row" id="roster-slots"></div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="draft-panel">
+          <div class="slot-machine" id="slot-machine">
+            <div class="slot-reels">
+              <div class="slot-reel" id="reel-team">
+                <span class="reel-label">TEAM</span>
+                <span class="reel-value">—</span>
+              </div>
+              <div class="slot-reel" id="reel-era">
+                <span class="reel-label">ERA</span>
+                <span class="reel-value">—</span>
+              </div>
+            </div>
+            <div class="slot-actions">
+              <button class="btn btn-spin" id="btn-spin" disabled>SPIN</button>
+              <button class="btn btn-secondary" id="btn-reroll-team" disabled>Re-roll Team</button>
+              <button class="btn btn-secondary" id="btn-reroll-era" disabled>Re-roll Era</button>
+            </div>
+          </div>
+
+          <div class="position-filter hidden" id="position-filter">
+            <span class="position-filter-label">Filter by position</span>
+            <div class="position-filter-chips" id="position-filter-chips"></div>
+          </div>
+
+          <div class="player-pool" id="player-pool">
+            <p class="pool-hint">Spin to reveal available players</p>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <section id="screen-results" class="screen">
+      <div class="results-hero">
+        <div class="record-display" id="record-display">82-0</div>
+        <div class="grade-display" id="grade-display">S+</div>
+        <h2 id="results-title">PERFECT SEASON!</h2>
+        <p id="results-subtitle">Your roster ran the table. Share it, then try again.</p>
+      </div>
+
+      <div class="results-stats">
+        <div class="stat-box">
+          <span class="stat-label">Team Power</span>
+          <span class="stat-value" id="weighted-avg">—</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Total PPG</span>
+          <span class="stat-value" id="stat-ppg">—</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Total RPG</span>
+          <span class="stat-value" id="stat-rpg">—</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Total APG</span>
+          <span class="stat-value" id="stat-apg">—</span>
+        </div>
+      </div>
+
+      <div class="results-roster" id="results-roster"></div>
+
+      <div class="results-actions">
+        <button class="btn btn-primary" id="btn-share">Share Results</button>
+        <button class="btn btn-secondary" id="btn-play-again">Play Again</button>
+      </div>
+    </section>
+
+    <dialog id="share-modal" class="share-modal">
+      <div class="share-modal-content">
+        <div class="share-modal-header">
+          <h3>Share your roster</h3>
+          <button type="button" class="share-modal-close" id="share-modal-close" aria-label="Close">×</button>
+        </div>
+        <div class="share-preview-wrap">
+          <div id="share-card-preview" class="share-card"></div>
+        </div>
+        <label class="share-link-label" for="share-link-input">Roster link</label>
+        <div class="share-link-row">
+          <input type="text" id="share-link-input" readonly />
+          <button type="button" class="btn btn-secondary" id="btn-copy-link">Copy Link</button>
+        </div>
+        <div class="share-modal-actions">
+          <button type="button" class="btn btn-primary" id="btn-save-image">Save Image</button>
+          <button type="button" class="btn btn-secondary" id="btn-share-native">Share…</button>
+        </div>
+        <p class="share-status" id="share-status"></p>
+      </div>
+    </dialog>
+  </div>
+
+  <dialog id="position-modal">
+    <div class="modal-content">
+      <h3>Assign Position</h3>
+      <p id="modal-player-name"></p>
+      <div id="position-options" class="position-options"></div>
+      <button class="btn btn-secondary modal-close" id="modal-cancel">Cancel</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/main.js?v=1"></script>
+</body>
+</html>
