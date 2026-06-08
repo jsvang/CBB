@@ -3,9 +3,9 @@ import { POSITION_WEIGHTS, LEGEND_ERAS, SEASON_LENGTH } from './data.js';
 const LEGEND_ERA_IDS = new Set(LEGEND_ERAS.map((e) => e.id));
 
 const NCAA_WIN_THRESHOLDS = [
-  [90, 39], [88, 38], [86, 37], [84, 36], [82, 35], [80, 34], [78, 33], [76, 32],
-  [74, 31], [72, 30], [70, 29], [68, 28], [66, 27], [64, 26], [62, 25], [60, 24],
-  [58, 22], [56, 20], [54, 18], [52, 16], [50, 14], [48, 12],
+  [88, 39], [86, 38], [84, 37], [82, 36], [80, 35], [78, 34], [76, 33], [74, 32],
+  [72, 31], [70, 30], [68, 29], [66, 28], [64, 27], [62, 26], [60, 25], [58, 24],
+  [56, 22], [54, 20], [52, 18], [50, 16], [48, 14], [46, 12],
 ];
 
 export const GRADE_THRESHOLDS = {
@@ -19,19 +19,19 @@ export const DIFFICULTIES = {
   easy: {
     id: 'easy',
     label: 'Easy',
-    undefeatedPower: 85,
-    winThresholds: NCAA_WIN_THRESHOLDS.map(([power, wins]) => [power - 5, wins]),
+    undefeatedPower: 82,
+    winThresholds: NCAA_WIN_THRESHOLDS.map(([power, wins]) => [power - 6, wins]),
   },
   normal: {
     id: 'normal',
     label: 'Normal',
-    undefeatedPower: 90,
+    undefeatedPower: 88,
     winThresholds: NCAA_WIN_THRESHOLDS,
   },
   hard: {
     id: 'hard',
     label: 'Hard',
-    undefeatedPower: 96,
+    undefeatedPower: 94,
     winThresholds: NCAA_WIN_THRESHOLDS.map(([power, wins]) => [power + 6, wins]),
   },
 };
@@ -192,7 +192,7 @@ export function powerToWins(power, difficulty = 'normal') {
   for (const [threshold, wins] of config.winThresholds) {
     if (power >= threshold) return wins;
   }
-  return Math.max(2, Math.floor(power / 5.5));
+  return Math.max(2, Math.floor(power / 5));
 }
 
 export function winsToGrade(wins) {
