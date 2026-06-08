@@ -2,36 +2,37 @@ import { POSITION_WEIGHTS, LEGEND_ERAS, SEASON_LENGTH } from './data.js';
 
 const LEGEND_ERA_IDS = new Set(LEGEND_ERAS.map((e) => e.id));
 
+const NCAA_WIN_THRESHOLDS = [
+  [90, 39], [88, 38], [86, 37], [84, 36], [82, 35], [80, 34], [78, 33], [76, 32],
+  [74, 31], [72, 30], [70, 29], [68, 28], [66, 27], [64, 26], [62, 25], [60, 24],
+  [58, 22], [56, 20], [54, 18], [52, 16], [50, 14], [48, 12],
+];
+
+export const GRADE_THRESHOLDS = {
+  a: 35,
+  b: 31,
+  c: 27,
+  d: 22,
+};
+
 export const DIFFICULTIES = {
   easy: {
     id: 'easy',
     label: 'Easy',
-    undefeatedPower: 79,
-    winThresholds: [
-      [79, 82], [77, 78], [75, 74], [73, 70], [71, 66], [69, 62],
-      [67, 58], [65, 54], [63, 50], [61, 46], [59, 42], [57, 38],
-      [55, 34], [53, 30], [51, 26], [49, 22], [47, 18], [45, 14], [43, 10], [41, 6],
-    ],
+    undefeatedPower: 85,
+    winThresholds: NCAA_WIN_THRESHOLDS.map(([power, wins]) => [power - 5, wins]),
   },
   normal: {
     id: 'normal',
     label: 'Normal',
-    undefeatedPower: 85,
-    winThresholds: [
-      [85, 82], [83, 78], [81, 74], [79, 70], [77, 66], [75, 62],
-      [73, 58], [71, 54], [69, 50], [67, 46], [65, 42], [63, 38],
-      [61, 34], [59, 30], [57, 26], [55, 22], [53, 18], [51, 14], [49, 10], [47, 6],
-    ],
+    undefeatedPower: 90,
+    winThresholds: NCAA_WIN_THRESHOLDS,
   },
   hard: {
     id: 'hard',
     label: 'Hard',
-    undefeatedPower: 91,
-    winThresholds: [
-      [91, 82], [89, 78], [87, 74], [85, 70], [83, 66], [81, 62],
-      [79, 58], [77, 54], [75, 50], [73, 46], [71, 42], [69, 38],
-      [67, 34], [65, 30], [63, 26], [61, 22], [59, 18], [57, 14], [55, 10], [53, 6],
-    ],
+    undefeatedPower: 96,
+    winThresholds: NCAA_WIN_THRESHOLDS.map(([power, wins]) => [power + 6, wins]),
   },
 };
 
@@ -39,7 +40,7 @@ export function getDifficulty(id = 'normal') {
   return DIFFICULTIES[id] || DIFFICULTIES.normal;
 }
 
-/** Era-adjusted stat totals — mirrors 82-0 style category aggregation. */
+/** Era-adjusted stat totals across all five categories. */
 const ERA_STAT_MULT = {
   '1960s': 1.08,
   '1970s': 1.05,
@@ -93,7 +94,7 @@ export function computeRosterRating(slots, slotKeys) {
 
 /**
  * Team power blends roster rating, top-end talent, and stat totals
- * (82-0 style — all five categories matter for a perfect run).
+ * (all five stat categories matter for a perfect run).
  */
 export function computeTeamPower(roster, rosterRating) {
   if (!roster.length) return { teamPower: 0, starCount: 0, legendCount: 0, topThreeAvg: 0 };
@@ -128,6 +129,18 @@ export function computeTeamPower(roster, rosterRating) {
     topThreeAvg: Math.round(topThreeAvg * 10) / 10,
     statTotals: stats,
   };
+}
+
+export function getTournamentMilestone(wins) {
+  if (wins === SEASON_LENGTH) return 'Undefeated national champion';
+  if (wins >= 37) return 'Reached the national championship game';
+  if (wins >= GRADE_THRESHOLDS.a) return 'Final Four run';
+  if (wins >= GRADE_THRESHOLDS.b) return 'Sweet Sixteen run';
+  if (wins >= 32) return 'Won an NCAA tournament game';
+  if (wins >= GRADE_THRESHOLDS.b - 1) return 'Made the NCAA tournament';
+  if (wins >= GRADE_THRESHOLDS.c) return 'NIT / bubble season';
+  if (wins >= GRADE_THRESHOLDS.d) return 'Below .500 in league play';
+  return 'Missed postseason play';
 }
 
 export function simulateSeason({ slots, slotKeys, rosterSize, difficulty = 'normal' }) {
@@ -168,6 +181,7 @@ export function simulateSeason({ slots, slotKeys, rosterSize, difficulty = 'norm
     difficulty: diff.id,
     difficultyLabel: diff.label,
     undefeatedPower: diff.undefeatedPower,
+    tournamentMilestone: getTournamentMilestone(wins),
     roster,
     perfect: wins === SEASON_LENGTH,
   };
@@ -178,15 +192,15 @@ export function powerToWins(power, difficulty = 'normal') {
   for (const [threshold, wins] of config.winThresholds) {
     if (power >= threshold) return wins;
   }
-  return Math.max(4, Math.floor(power / 2.5));
+  return Math.max(2, Math.floor(power / 5.5));
 }
 
 export function winsToGrade(wins) {
   if (wins === SEASON_LENGTH) return 'S+';
-  if (wins >= 75) return 'A';
-  if (wins >= 65) return 'B';
-  if (wins >= 55) return 'C';
-  if (wins >= 45) return 'D';
+  if (wins >= GRADE_THRESHOLDS.a) return 'A';
+  if (wins >= GRADE_THRESHOLDS.b) return 'B';
+  if (wins >= GRADE_THRESHOLDS.c) return 'C';
+  if (wins >= GRADE_THRESHOLDS.d) return 'D';
   return 'F';
 }
 

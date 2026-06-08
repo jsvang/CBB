@@ -393,29 +393,32 @@ export function buildResultsRosterHtml(result) {
 }
 
 function getResultsHeadline(result) {
-  if (result.perfect) return 'PERFECT SEASON!';
-  if (result.wins >= 75) return 'CONTENDER';
-  if (result.wins >= 65) return 'PLAYOFF PUSH';
-  if (result.wins >= 55) return 'WINNING RECORD';
+  if (result.perfect) return 'NATIONAL CHAMPION!';
+  if (result.wins >= 35) return 'FINAL FOUR';
+  if (result.wins >= 31) return 'TOURNAMENT RUN';
+  if (result.wins >= 27) return 'NCAA BOUND';
+  if (result.wins >= 22) return 'NIT SEASON';
   return 'SEASON OVER';
 }
 
 function getResultsSubtitle(result) {
   const diffLabel = result.difficultyLabel || getDifficulty(result.difficulty).label;
+  const milestone = result.tournamentMilestone || '';
+  const seasonLine = `${result.record} across the regular season, conference tournament, and March Madness.`;
 
   if (result.perfect) {
-    return `Perfect roster on ${diffLabel} difficulty. Share it, then see if you can do it again.`;
+    return `${seasonLine} Undefeated on ${diffLabel} difficulty — share it, then try again.`;
   }
-  if (result.wins >= 75) {
-    return 'This lineup was close — one or two better picks could have gone 82-0. Run it back and upgrade your weak spots.';
+  if (result.wins >= 35) {
+    return `${seasonLine} ${milestone}. One or two better picks could have gone undefeated.`;
   }
-  if (result.wins >= 65) {
-    return 'Solid roster, but not strong enough to run the table. Target higher-rated stars and try again.';
+  if (result.wins >= 31) {
+    return `${seasonLine} ${milestone}. Target higher-rated stars and push deeper into March Madness.`;
   }
-  if (result.wins >= 55) {
-    return 'Too many average picks held this roster back. Chase legend eras and build a stronger lineup next time.';
+  if (result.wins >= 27) {
+    return `${seasonLine} ${milestone}. Target legend eras and build a stronger tournament roster.`;
   }
-  return 'This roster came up short. Rework your picks, use your re-rolls, and take another shot at 82-0.';
+  return `${seasonLine} ${milestone}. Rework your picks, use your re-rolls, and take another shot at going undefeated.`;
 }
 
 export function renderShareCard(result, container) {
@@ -447,7 +450,7 @@ export function renderShareCard(result, container) {
     <div class="share-card-roster">
       <div class="share-card-side"><div class="share-card-side-label">STARTING FIVE</div>${rows}</div>
     </div>
-    <div class="share-card-footer">Can you go 82-0 in college basketball?</div>
+    <div class="share-card-footer">Can you go undefeated?</div>
   `;
 }
 
@@ -561,9 +564,9 @@ export function renderResults(result) {
   const gradeEl = document.getElementById('grade-display');
   if (result.perfect) {
     gradeEl.style.color = 'var(--accent)';
-  } else if (result.wins >= 75) {
+  } else if (result.wins >= 35) {
     gradeEl.style.color = 'var(--green)';
-  } else if (result.wins >= 65) {
+  } else if (result.wins >= 31) {
     gradeEl.style.color = 'var(--blue)';
   } else {
     gradeEl.style.color = 'var(--text-muted)';
@@ -598,5 +601,5 @@ export function getShareText(result, url = null) {
 
   const diff = result.difficultyLabel ? ` (${result.difficultyLabel})` : '';
   const linkLine = url ? `\n\n${url}` : '';
-  return `Undefeated CBB${diff} — ${result.record} (${result.grade})\n\n${lines.join('\n')}\n\nCan you go 82-0 in college basketball?${linkLine}`;
+  return `Undefeated CBB${diff} — ${result.record} (${result.grade})\n\n${lines.join('\n')}\n\nCan you go undefeated?${linkLine}`;
 }

@@ -32,7 +32,7 @@ async function ensureHomeReady() {
     dbReady = true;
     const count = getPlayerCount();
     const sub = document.querySelector('.hero-sub');
-    if (sub) sub.textContent = `Build your roster from ${count.toLocaleString()} college players. Can you go 82-0?`;
+    if (sub) sub.textContent = `Build your roster from ${count.toLocaleString()} college players. Can you go undefeated?`;
   }
   if (!homeInitialized) {
     initHomeUI({ startGame });

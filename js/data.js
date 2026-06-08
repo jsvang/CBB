@@ -1,4 +1,8 @@
-export const SEASON_LENGTH = 82;
+/** Max games for an undefeated national champion (regular season + conf. tourney + March Madness). */
+export const REGULAR_SEASON_GAMES = 30;
+export const CONFERENCE_TOURNAMENT_GAMES = 3;
+export const NCAA_TOURNAMENT_GAMES = 6;
+export const SEASON_LENGTH = REGULAR_SEASON_GAMES + CONFERENCE_TOURNAMENT_GAMES + NCAA_TOURNAMENT_GAMES;
 
 export const CONFERENCES = {
   SEC: { name: 'SEC', color: '#c9a227' },
@@ -33,7 +37,7 @@ export const LEGEND_ERAS = [
 
 export const ALL_ERAS = [...MODERN_ERAS, ...LEGEND_ERAS];
 
-/** 82-0 style starting five */
+/** Starting five positions */
 export const ROSTER_SLOTS = ['PG', 'SG', 'SF', 'PF', 'C'];
 
 export const POSITION_MAP = {
