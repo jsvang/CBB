@@ -120,20 +120,16 @@ def parse_per_game_table(html: str) -> list[dict]:
 
 
 def infer_positions(pos: str, stats: dict) -> list[str]:
+    """Keep positions generic (G fits PG/SG, F fits SF/PF) so draft slots stay fillable."""
     pos = pos.upper().replace("/", "-")
-    if pos in {"G-F", "GF"}:
+    if pos in {"G-F", "GF", "F-G"}:
         return ["G-F"]
     if pos in {"F-C", "FC", "C-F", "CF"}:
-        return ["PF", "C"]
-    if pos == "C":
-        return ["C"]
-    if pos == "G":
-        return ["PG"] if stats["apg"] >= 4.0 else ["SG"]
-    if pos == "F":
-        return ["PF"] if stats["rpg"] >= 7.0 else ["SF"]
-    if "-" in pos:
+        return ["F", "C"]
+    if pos in {"C", "G", "F", "PG", "SG", "SF", "PF"}:
         return [pos]
-    return [pos]
+    # Missing/unknown position: guess guard vs forward from rebounding profile.
+    return ["F"] if stats["rpg"] >= 4.5 else ["G"]
 
 
 def roster_for_team_era(team_id: str, era: str, min_mpg: float = 5.0) -> list[dict]:

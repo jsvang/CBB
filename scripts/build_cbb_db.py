@@ -78,14 +78,33 @@ def load_rosters():
     return payload.get("rosters", {})
 
 
+# Collapse over-specific roster positions to generics (G fits PG/SG, F fits SF/PF)
+# so single-team drafts always have players for every slot.
+GENERIC_POSITION = {"PG": "G", "SG": "G", "SF": "F", "PF": "F"}
+
+
+def normalize_roster_positions(positions, stats):
+    out = []
+    for pos in positions or []:
+        pos = (pos or "").strip().upper()
+        if not pos:
+            continue
+        mapped = GENERIC_POSITION.get(pos, pos)
+        if mapped not in out:
+            out.append(mapped)
+    if not out:
+        out = ["F"] if stats.get("rpg", 0) >= 4.5 else ["G"]
+    return out
+
+
 def roster_players_for(team, era, roster_entries, legend_names, count):
     """Return up to `count` real roster players, excluding legends."""
     players = []
     for entry in roster_entries:
         if normalize_name(entry["name"]) in legend_names:
             continue
-        positions = entry.get("positions") or ["G"]
         stats = entry["stats"]
+        positions = normalize_roster_positions(entry.get("positions"), stats)
         players.append(build_player(
             entry["name"],
             team["id"],
