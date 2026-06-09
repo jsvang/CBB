@@ -17,6 +17,7 @@
   {"id": "oklahoma", "name": "Oklahoma", "conf": "SEC", "tier": 2},
   {"id": "illinois", "name": "Illinois", "conf": "BigTen", "tier": 2},
   {"id": "indiana", "name": "Indiana", "conf": "BigTen", "tier": 3},
+  {"id": "indiana-state", "name": "Indiana State", "conf": "MVC", "tier": 2},
   {"id": "iowa", "name": "Iowa", "conf": "BigTen", "tier": 2},
   {"id": "maryland", "name": "Maryland", "conf": "BigTen", "tier": 2},
   {"id": "michigan", "name": "Michigan", "conf": "BigTen", "tier": 2},

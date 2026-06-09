@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build college basketball player database from legends + generated roster players."""
+"""Build college basketball player database from legends + real roster data."""
 
 import json
-import random
+import math
 import re
 from pathlib import Path
 
@@ -14,116 +14,45 @@ ERAS = [
     "1990s", "1980s", "1970s", "1960s",
 ]
 
-POSITIONS_BY_SLOT = {
-    "PG": ["PG", "G"],
-    "SG": ["SG", "G"],
-    "SF": ["SF", "F", "G-F"],
-    "PF": ["PF", "F"],
-    "C": ["C"],
-}
-
-FIRST_NAMES = [
-    "James", "Michael", "Chris", "Marcus", "Tyler", "Brandon", "Jordan", "Derek",
-    "Kevin", "Ryan", "Josh", "Matt", "David", "Eric", "Brian", "Anthony", "Devin",
-    "Malik", "Jamal", "Terrence", "Cameron", "Isaiah", "Darius", "Trevor", "Logan",
-]
-
-LAST_NAMES = [
-    "Johnson", "Williams", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor",
-    "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson", "Robinson",
-    "Clark", "Lewis", "Lee", "Walker", "Hall", "Allen", "Young", "King", "Wright",
-]
-
-ERA_BASELINE = {
-    "2020-24": 72,
-    "2015-19": 71,
-    "2010-14": 70,
-    "2005-09": 69,
-    "2000-04": 68,
-    "1990s": 70,
-    "1980s": 69,
-    "1970s": 68,
-    "1960s": 67,
-}
-
 
 def slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
+def normalize_name(name: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+
+# Position-weighted stat contributions (tuned for college per-game averages).
+POS_WEIGHTS = {
+    "PG": {"ppg": 1.4, "rpg": 0.4, "apg": 2.0, "spg": 3.5, "bpg": 1.5},
+    "G": {"ppg": 1.4, "rpg": 0.4, "apg": 2.0, "spg": 3.5, "bpg": 1.5},
+    "SG": {"ppg": 1.8, "rpg": 0.5, "apg": 1.0, "spg": 3.0, "bpg": 1.0},
+    "SF": {"ppg": 1.6, "rpg": 0.9, "apg": 0.9, "spg": 2.5, "bpg": 2.0},
+    "G-F": {"ppg": 1.6, "rpg": 0.9, "apg": 0.9, "spg": 2.5, "bpg": 2.0},
+    "F": {"ppg": 1.6, "rpg": 0.9, "apg": 0.9, "spg": 2.5, "bpg": 2.0},
+    "PF": {"ppg": 1.3, "rpg": 1.3, "apg": 0.5, "spg": 1.8, "bpg": 3.0},
+    "C": {"ppg": 1.0, "rpg": 1.6, "apg": 0.4, "spg": 1.0, "bpg": 3.8},
+}
+
+RATING_CURVE_K = 22  # higher = more compression at the top end
+
+
 def rating_from_stats(stats: dict, pos: str) -> int:
-    ppg = stats.get("ppg", 0)
-    rpg = stats.get("rpg", 0)
-    apg = stats.get("apg", 0)
-    spg = stats.get("spg", 0)
-    bpg = stats.get("bpg", 0)
+    weights = POS_WEIGHTS.get(pos, POS_WEIGHTS["SF"])
+    raw = sum(stats.get(stat, 0) * weights[stat] for stat in weights)
+    raw += (stats.get("fgPct", 45) - 45) * 0.06
 
-    if pos in ("PG", "G"):
-        raw = ppg * 1.1 + apg * 2.2 + rpg * 0.5 + spg * 3 + bpg * 2
-    elif pos in ("SG",):
-        raw = ppg * 1.15 + apg * 1.2 + rpg * 0.6 + spg * 2.5 + bpg * 1.5
-    elif pos in ("SF", "G-F", "F"):
-        raw = ppg * 1.0 + rpg * 0.9 + apg * 1.0 + spg * 2 + bpg * 1.8
-    elif pos in ("PF",):
-        raw = ppg * 0.95 + rpg * 1.3 + apg * 0.6 + spg * 1.5 + bpg * 2.2
-    else:
-        raw = ppg * 0.85 + rpg * 1.5 + apg * 0.4 + spg * 1.2 + bpg * 2.8
+    if raw <= 0:
+        return 40
 
-    return max(40, min(97, round(raw)))
+    scaled = 40 + 57 * (1 - math.exp(-raw / RATING_CURVE_K))
+    return max(40, min(97, round(scaled)))
 
 
-def gen_stats(pos: str, rating: int, rng: random.Random) -> dict:
-    scale = rating / 75.0
-    if pos in ("PG", "G"):
-        return {
-            "ppg": round(rng.uniform(6, 14) * scale, 1),
-            "rpg": round(rng.uniform(2, 5) * scale, 1),
-            "apg": round(rng.uniform(3, 8) * scale, 1),
-            "spg": round(rng.uniform(0.8, 2.2) * scale, 1),
-            "bpg": round(rng.uniform(0.1, 0.5) * scale, 1),
-            "fgPct": round(rng.uniform(38, 48), 1),
-        }
-    if pos == "SG":
-        return {
-            "ppg": round(rng.uniform(8, 18) * scale, 1),
-            "rpg": round(rng.uniform(2, 5) * scale, 1),
-            "apg": round(rng.uniform(1.5, 4) * scale, 1),
-            "spg": round(rng.uniform(0.7, 1.8) * scale, 1),
-            "bpg": round(rng.uniform(0.1, 0.6) * scale, 1),
-            "fgPct": round(rng.uniform(40, 50), 1),
-        }
-    if pos in ("SF", "G-F", "F"):
-        return {
-            "ppg": round(rng.uniform(8, 16) * scale, 1),
-            "rpg": round(rng.uniform(4, 8) * scale, 1),
-            "apg": round(rng.uniform(1.5, 4) * scale, 1),
-            "spg": round(rng.uniform(0.6, 1.5) * scale, 1),
-            "bpg": round(rng.uniform(0.3, 1.0) * scale, 1),
-            "fgPct": round(rng.uniform(42, 52), 1),
-        }
-    if pos == "PF":
-        return {
-            "ppg": round(rng.uniform(7, 15) * scale, 1),
-            "rpg": round(rng.uniform(6, 10) * scale, 1),
-            "apg": round(rng.uniform(1, 3) * scale, 1),
-            "spg": round(rng.uniform(0.4, 1.2) * scale, 1),
-            "bpg": round(rng.uniform(0.5, 1.5) * scale, 1),
-            "fgPct": round(rng.uniform(44, 54), 1),
-        }
-    return {
-        "ppg": round(rng.uniform(6, 14) * scale, 1),
-        "rpg": round(rng.uniform(7, 12) * scale, 1),
-        "apg": round(rng.uniform(0.8, 2.5) * scale, 1),
-        "spg": round(rng.uniform(0.3, 1.0) * scale, 1),
-        "bpg": round(rng.uniform(1.0, 3.0) * scale, 1),
-        "fgPct": round(rng.uniform(50, 60), 1),
-    }
-
-
-def build_player(name, team_id, team_name, conf, era, positions, rating, stats, awards=""):
+def build_player(name, team_id, team_name, conf, era, positions, stats, awards=""):
     primary = positions[0]
-    if not rating:
-        rating = rating_from_stats(stats, primary)
+    rating = rating_from_stats(stats, primary)
     pid = f"{team_id}-{era}-{slug(name)}"
     return {
         "id": pid,
@@ -139,41 +68,49 @@ def build_player(name, team_id, team_name, conf, era, positions, rating, stats, 
     }
 
 
-def generate_roster_players(team, era, count, rng, used_names):
+def load_rosters():
+    path = DATA / "rosters.json"
+    if not path.exists():
+        raise SystemExit(
+            f"Missing {path}. Run: python scripts/fetch_rosters.py"
+        )
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("rosters", {})
+
+
+def roster_players_for(team, era, roster_entries, legend_names, count):
+    """Return up to `count` real roster players, excluding legends."""
     players = []
-    tier = team.get("tier", 1)
-    base = ERA_BASELINE.get(era, 68) + tier * 2
-    slot_cycle = ["PG", "SG", "SF", "PF", "C", "PG", "SG", "SF", "PF", "C", "G", "F"]
-
-    for i in range(count):
-        pos = slot_cycle[i % len(slot_cycle)]
-        positions = POSITIONS_BY_SLOT.get(pos, [pos])[:1]
-        if pos == "G":
-            positions = ["G"]
-        elif pos == "F":
-            positions = ["F"]
-
-        for _ in range(20):
-            name = f"{rng.choice(FIRST_NAMES)} {rng.choice(LAST_NAMES)}"
-            if name not in used_names:
-                used_names.add(name)
-                break
-
-        rating = max(55, min(84, base + rng.randint(-6, 8)))
-        stats = gen_stats(positions[0], rating, rng)
+    for entry in roster_entries:
+        if normalize_name(entry["name"]) in legend_names:
+            continue
+        positions = entry.get("positions") or ["G"]
+        stats = entry["stats"]
         players.append(build_player(
-            name, team["id"], team["name"], team["conf"], era, positions, rating, stats,
+            entry["name"],
+            team["id"],
+            team["name"],
+            team["conf"],
+            era,
+            positions,
+            stats,
+            entry.get("awards", ""),
         ))
+        if len(players) >= count:
+            break
     return players
 
 
 def main():
     teams = json.loads((DATA / "teams.json").read_text(encoding="utf-8"))
     legends = json.loads((DATA / "legends.json").read_text(encoding="utf-8"))
+    rosters = load_rosters()
     team_by_id = {t["id"]: t for t in teams}
 
     players = []
     used_ids = set()
+    roster_slots = 0
+    shortfalls = []
 
     for leg in legends:
         team = team_by_id.get(leg["team"])
@@ -186,7 +123,6 @@ def main():
             team["conf"],
             leg["era"],
             leg["positions"],
-            leg.get("rating"),
             leg["stats"],
             leg.get("awards", ""),
         )
@@ -197,11 +133,20 @@ def main():
     print(f"Loaded {len(players)} legends")
 
     for team in teams:
+        team_rosters = rosters.get(team["id"], {})
         for era in ERAS:
-            rng = random.Random(hash(f"{team['id']}|{era}"))
-            used_names = {p["name"] for p in players if p["team"] == team["id"] and p["era"] == era}
+            legend_names = {
+                normalize_name(p["name"])
+                for p in players
+                if p["team"] == team["id"] and p["era"] == era
+            }
             count = 8 + team.get("tier", 1) * 2
-            roster = generate_roster_players(team, era, count, rng, used_names)
+            entries = team_rosters.get(era, [])
+            roster = roster_players_for(team, era, entries, legend_names, count)
+            roster_slots += len(roster)
+            if len(roster) < count:
+                shortfalls.append(f"{team['id']}/{era}: {len(roster)}/{count}")
+
             for pl in roster:
                 if pl["id"] not in used_ids:
                     players.append(pl)
@@ -209,6 +154,9 @@ def main():
 
     out = DATA / "players.json"
     out.write_text(json.dumps(players, separators=(",", ":")), encoding="utf-8")
+    print(f"Added {roster_slots} roster players from real data")
+    if shortfalls:
+        print(f"Roster shortfalls (no fake fill): {len(shortfalls)}")
     print(f"Wrote {len(players):,} players to {out}")
 
 

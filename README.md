@@ -6,12 +6,15 @@ Each round spins a random team and era. Pick one player, fill all five spots, an
 
 ## Run locally
 
-Generate the player database first (once, or again after editing `data/legends.json` or `data/teams.json`):
+Generate the player database (once, or again after editing source data):
 
 ```bash
-python scripts/build_cbb_db.py
+python scripts/fetch_rosters.py   # real roster names/stats from Sports-Reference (resumable)
+python scripts/build_cbb_db.py    # merges legends + rosters into data/players.json
 python -m http.server 8080 --bind 127.0.0.1
 ```
+
+Roster data is cached in `data/rosters.json`. Re-run `fetch_rosters.py` only when teams or eras change; edit `data/legends.json` for star players, then run `build_cbb_db.py`.
 
 Then open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
