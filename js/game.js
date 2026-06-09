@@ -103,6 +103,14 @@ export function createGame(options) {
     return pickRandom(pool.length ? pool : eraPool);
   }
 
+  function getDraftedIds() {
+    const ids = new Set();
+    for (const slot of slotKeys) {
+      if (slots[slot]) ids.add(slots[slot].id);
+    }
+    return ids;
+  }
+
   function findSpin({
     fixedTeamId = null,
     fixedEraId = null,
@@ -114,11 +122,12 @@ export function createGame(options) {
     const allowedEras = isEraFilterActive(eraFilter)
       ? ALL_ERAS.filter((e) => (Array.isArray(eraFilter) ? eraFilter : [eraFilter]).includes(e.id))
       : ALL_ERAS;
+    const draftedIds = getDraftedIds();
 
-    function tryCombo(team, era) {
+    function tryCombo(team, era, allowReusedCombo = false) {
       const key = `${team.id}|${era.id}`;
-      if (usedCombos.has(key)) return null;
-      const players = getSpinPlayers(team.id, era.id);
+      if (!allowReusedCombo && usedCombos.has(key)) return null;
+      const players = getSpinPlayers(team.id, era.id).filter((pl) => !draftedIds.has(pl.id));
       if (!players.length) return null;
       usedCombos.add(key);
       if (era.isLegend) legendUsed = true;
@@ -149,18 +158,26 @@ export function createGame(options) {
       if (spin) return spin;
     }
 
-    for (const team of availableTeams) {
-      if (fixedTeamId && team.id !== fixedTeamId) continue;
-      if (excludeTeamId && team.id === excludeTeamId) continue;
-      for (const era of allowedEras) {
-        if (fixedEraId && era.id !== fixedEraId) continue;
-        if (excludeEraId && era.id === excludeEraId) continue;
-        const spin = tryCombo(team, era);
-        if (spin) return spin;
+    function exhaustiveSearch(teamPool, eraPool, allowReusedCombo) {
+      for (const team of teamPool) {
+        if (fixedTeamId && team.id !== fixedTeamId) continue;
+        if (excludeTeamId && team.id === excludeTeamId) continue;
+        for (const era of eraPool) {
+          if (fixedEraId && era.id !== fixedEraId) continue;
+          if (excludeEraId && era.id === excludeEraId) continue;
+          const spin = tryCombo(team, era, allowReusedCombo);
+          if (spin) return spin;
+        }
       }
+      return null;
     }
 
-    return null;
+    // Widen the search progressively so a late-round spin never dead-ends:
+    // reuse earlier combos, then ignore the era filter, then any team at all.
+    return exhaustiveSearch(availableTeams, allowedEras, false)
+      || exhaustiveSearch(availableTeams, allowedEras, true)
+      || exhaustiveSearch(availableTeams, ALL_ERAS, true)
+      || exhaustiveSearch(getFilteredTeams(), ALL_ERAS, true);
   }
 
   function releaseCurrentSpin() {

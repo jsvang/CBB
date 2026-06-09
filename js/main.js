@@ -143,6 +143,12 @@ async function animateSpin() {
 
   const spin = game.spin();
   renderSpin(spin, false);
+  if (!spin) {
+    const pool = document.getElementById('player-pool');
+    if (pool) pool.innerHTML = '<p class="pool-hint">No eligible players found — spin again.</p>';
+    updateGameHeader(game);
+    return;
+  }
   renderPositionFilter(game, positionFilter, (filterId) => {
     positionFilter = filterId;
     renderPlayerPool(spin, game.mode, handlePlayerSelect, positionFilter, getOpenSlots());
