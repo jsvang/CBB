@@ -72,6 +72,23 @@ export function createGame(options) {
     return getPlayersForSpin(teamId, eraId, { openSlots: getOpenSlots() });
   }
 
+  function getFilteredEraIds() {
+    if (!isEraFilterActive(eraFilter)) {
+      return ALL_ERAS.map((e) => e.id);
+    }
+    return Array.isArray(eraFilter) ? eraFilter : [eraFilter];
+  }
+
+  function hasAlternateTeam(excludeTeamId = null) {
+    const id = excludeTeamId ?? currentSpin?.teamId;
+    return teams.some((t) => t.id && t.id !== id);
+  }
+
+  function hasAlternateEra(excludeEraId = null) {
+    const id = excludeEraId ?? currentSpin?.eraId;
+    return getFilteredEraIds().some((eraId) => eraId !== id);
+  }
+
   function pickEra(excludeEraId, forceLegend) {
     if (isEraFilterActive(eraFilter)) {
       const ids = new Set(Array.isArray(eraFilter) ? eraFilter : [eraFilter]);
@@ -181,11 +198,11 @@ export function createGame(options) {
     },
 
     canRerollTeam() {
-      return !!currentSpin && !teamRerollUsed;
+      return !!currentSpin && !teamRerollUsed && hasAlternateTeam();
     },
 
     canRerollEra() {
-      return !!currentSpin && !eraRerollUsed && !isEraFilterActive(eraFilter);
+      return !!currentSpin && !eraRerollUsed && hasAlternateEra();
     },
 
     rerollStatus() {
@@ -207,20 +224,36 @@ export function createGame(options) {
       if (!this.canRerollTeam()) return null;
       const eraId = currentSpin.eraId;
       const excludeTeamId = currentSpin.teamId;
+      const previous = currentSpin;
       releaseCurrentSpin();
       teamRerollUsed = true;
-      currentSpin = findSpin({ fixedEraId: eraId, excludeTeamId });
-      return currentSpin;
+      const next = findSpin({ fixedEraId: eraId, excludeTeamId });
+      if (next) {
+        currentSpin = next;
+        return currentSpin;
+      }
+      teamRerollUsed = false;
+      usedCombos.add(`${previous.teamId}|${previous.eraId}`);
+      currentSpin = previous;
+      return null;
     },
 
     rerollEra() {
       if (!this.canRerollEra()) return null;
       const teamId = currentSpin.teamId;
       const excludeEraId = currentSpin.eraId;
+      const previous = currentSpin;
       releaseCurrentSpin();
       eraRerollUsed = true;
-      currentSpin = findSpin({ fixedTeamId: teamId, excludeEraId, forceLegend: !legendUsed });
-      return currentSpin;
+      const next = findSpin({ fixedTeamId: teamId, excludeEraId, forceLegend: !legendUsed });
+      if (next) {
+        currentSpin = next;
+        return currentSpin;
+      }
+      eraRerollUsed = false;
+      usedCombos.add(`${previous.teamId}|${previous.eraId}`);
+      currentSpin = previous;
+      return null;
     },
 
     draftPlayer(playerId, slotPosition) {

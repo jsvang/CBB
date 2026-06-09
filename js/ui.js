@@ -5,7 +5,6 @@ import {
   slotDisplayLabel,
   rosterDiagramLabels,
   normalizeEraFilter,
-  isEraFilterActive,
   POOL_FILTERS,
   playerMatchesPoolFilter,
   playerEligibleForDraftPool,
@@ -358,18 +357,13 @@ export function updateGameHeader(game) {
     const parts = [];
     if (teamAvail) parts.push('Team');
     if (eraAvail) parts.push('Era');
-    badge.textContent = isEraFilterActive(game.eraFilter)
-      ? (teamAvail ? 'Eras limited · Re-roll Team' : 'Eras limited')
-      : `Re-roll: ${parts.join(' · ')}`;
+    badge.textContent = `Re-roll: ${parts.join(' · ')}`;
     badge.className = 'reroll-badge available';
-  } else if (isEraFilterActive(game.eraFilter) && teamUsed) {
-    badge.textContent = 'Eras limited · Re-rolls used';
-    badge.className = 'reroll-badge used';
-  } else if (teamUsed && eraUsed) {
+  } else if (teamUsed || eraUsed) {
     badge.textContent = 'Re-rolls used';
     badge.className = 'reroll-badge used';
   } else {
-    badge.textContent = '1 team · 1 era re-roll';
+    badge.textContent = 'No re-rolls available';
     badge.className = 'reroll-badge';
   }
 

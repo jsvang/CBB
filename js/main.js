@@ -211,6 +211,10 @@ bindClick('btn-reroll-team', async () => {
   await new Promise((r) => setTimeout(r, 800));
   document.getElementById('reel-team')?.classList.remove('spinning');
   const spin = game.rerollTeam();
+  if (!spin) {
+    updateGameHeader(game);
+    return;
+  }
   renderSpin(spin, false);
   renderPositionFilter(game, positionFilter, (filterId) => {
     positionFilter = filterId;
@@ -227,6 +231,10 @@ bindClick('btn-reroll-era', async () => {
   await new Promise((r) => setTimeout(r, 800));
   document.getElementById('reel-era')?.classList.remove('spinning');
   const spin = game.rerollEra();
+  if (!spin) {
+    updateGameHeader(game);
+    return;
+  }
   renderSpin(spin, false);
   renderPositionFilter(game, positionFilter, (filterId) => {
     positionFilter = filterId;
